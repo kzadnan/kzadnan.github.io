@@ -1,9 +1,9 @@
 :root {
   --ink: #12151c;
   --ink-soft: #3a3f4b;
-  --paper: #f6f3ec;
-  --paper-2: #efe8dc;
-  --card: #fffdf8;
+  --paper: #f7f9fc;
+  --paper-2: #eef2f6;
+  --card: #ffffff;
   --line: rgba(18, 21, 28, 0.12);
   --heat: #d3542f;
   --heat-deep: #9e3418;
@@ -29,8 +29,8 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(211, 84, 47, 0.08), transparent 50%),
-    radial-gradient(900px 400px at 100% 0%, rgba(44, 110, 122, 0.1), transparent 45%),
+    radial-gradient(1200px 500px at 10% -10%, rgba(44, 110, 122, 0.05), transparent 50%),
+    radial-gradient(900px 400px at 100% 0%, rgba(44, 110, 122, 0.04), transparent 45%),
     var(--paper);
   font-family: "Source Sans 3", "Segoe UI", sans-serif;
   font-size: 1.05rem;
@@ -82,7 +82,7 @@ h4 {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(14px);
-  background: rgba(246, 243, 236, 0.86);
+  background: rgba(247, 249, 252, 0.9);
   border-bottom: 1px solid var(--line);
 }
 
@@ -238,7 +238,7 @@ h4 {
 }
 
 .section-alt {
-  background: linear-gradient(180deg, rgba(239, 232, 220, 0.7), rgba(239, 232, 220, 0.2));
+  background: linear-gradient(180deg, rgba(238, 242, 246, 0.9), rgba(247, 249, 252, 0.4));
   width: 100%;
   padding-inline: max(1.2rem, calc((100% - var(--max)) / 2));
 }
