@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="16" fill="#b71c1c"/>
+  <text x="60" y="56" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="#fff">LAMMPS</text>
+  <text x="60" y="80" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">Molecular Dynamics</text>
+  <line x1="20" y1="100" x2="100" y2="100" stroke="#ef9a9a" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="35" cy="100" r="4" fill="#ffcdd2" opacity="0.7"/>
+  <circle cx="55" cy="100" r="4" fill="#ffcdd2" opacity="0.7"/>
+  <circle cx="75" cy="100" r="4" fill="#ffcdd2" opacity="0.7"/>
+  <circle cx="95" cy="100" r="4" fill="#ffcdd2" opacity="0.7"/>
+</svg>

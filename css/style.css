@@ -146,9 +146,10 @@ h4 {
   background: var(--ink);
 }
 
+/* Hero with profile photo */
 .hero {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 3rem;
   padding: 4.2rem 0 3.4rem;
   align-items: center;
@@ -170,16 +171,9 @@ h4 {
 }
 
 .lede {
-  font-size: 1.22rem;
+  font-size: 1.15rem;
   color: var(--ink-soft);
   max-width: 40rem;
-}
-
-.thesis {
-  font-size: 0.98rem;
-  color: var(--ink-soft);
-  border-left: 3px solid var(--gold);
-  padding-left: 1rem;
 }
 
 .hero-links {
@@ -218,21 +212,21 @@ h4 {
   color: #fff;
 }
 
-.hero-figure {
+.hero-photo {
   margin: 0;
-  background: var(--ink);
-  color: var(--paper);
-  border-radius: var(--radius);
-  padding: 1.2rem 1.2rem 1rem;
-  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
 }
 
-.hero-figure figcaption {
-  font-size: 0.82rem;
-  color: rgba(246, 243, 236, 0.72);
-  margin-top: 0.6rem;
+.hero-photo img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow), 0 0 0 4px var(--paper), 0 0 0 6px var(--cool);
 }
 
+/* Sections */
 .section {
   padding: 3.6rem 0 4rem;
 }
@@ -262,16 +256,11 @@ h4 {
   color: var(--ink-soft);
 }
 
-.about-grid,
-.interest-grid,
-.software-grid,
-.skill-cols {
-  display: grid;
-  gap: 1.4rem;
-}
-
+/* About grid */
 .about-grid {
+  display: grid;
   grid-template-columns: 1.4fr 0.8fr;
+  gap: 1.4rem;
   margin-top: 2rem;
 }
 
@@ -304,8 +293,54 @@ h4 {
   margin: 0.25rem 0 0;
 }
 
+/* Tools section */
+.tools-section {
+  margin-top: 2.4rem;
+}
+
+.tools-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.2rem 0.8rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+}
+
+.tool-card img {
+  border-radius: 12px;
+}
+
+.tool-card span {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+/* Research interests */
 .interest-grid {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
   margin-top: 2rem;
 }
 
@@ -326,20 +361,16 @@ h4 {
 
 .interest h3 {
   margin-top: 0.35rem;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 }
 
-.interest p,
-.interest li {
+.interest p {
   color: var(--ink-soft);
   font-size: 0.98rem;
+  margin: 0;
 }
 
-.interest ul {
-  padding-left: 1.1rem;
-  margin: 0.6rem 0 0;
-}
-
+/* Publications */
 .pub-filters {
   display: flex;
   gap: 0.5rem;
@@ -370,11 +401,15 @@ h4 {
 }
 
 .pub {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.2rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-left: 4px solid var(--gold);
   border-radius: 14px;
   padding: 1.3rem 1.4rem 1.15rem;
+  align-items: start;
 }
 
 .pub[data-role="first"] {
@@ -383,6 +418,47 @@ h4 {
 
 .pub.is-hidden {
   display: none;
+}
+
+.pub-visual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.2rem;
+}
+
+.journal-badge {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Fraunces, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.journal-prb {
+  background: linear-gradient(135deg, #1a237e, #3949ab);
+}
+
+.journal-pra {
+  background: linear-gradient(135deg, #4a148c, #7b1fa2);
+}
+
+.journal-apl {
+  background: linear-gradient(135deg, #01579b, #0288d1);
+}
+
+.journal-ijhmt {
+  background: linear-gradient(135deg, #e65100, #f57c00);
+}
+
+.pub-content {
+  min-width: 0;
 }
 
 .pub-meta {
@@ -419,17 +495,18 @@ h4 {
 }
 
 .pub h3 {
-  font-size: 1.28rem;
+  font-size: 1.18rem;
 }
 
-.authors,
-.cite {
+.authors {
   margin: 0.15rem 0;
   color: var(--ink-soft);
+  font-size: 0.92rem;
 }
 
 .highlight {
-  margin: 0.7rem 0 0.5rem;
+  margin: 0.5rem 0 0.5rem;
+  font-size: 0.95rem;
 }
 
 .pub-links {
@@ -440,6 +517,7 @@ h4 {
   font-size: 0.92rem;
 }
 
+/* Timeline & experience */
 .timeline {
   display: grid;
   gap: 1.2rem;
@@ -482,13 +560,22 @@ h4 {
   margin-bottom: 0.8rem;
 }
 
+/* Software grid */
 .software-grid {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
   margin-top: 1.8rem;
 }
 
 .soft h3 {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+}
+
+.soft p {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin: 0;
 }
 
 .soft a {
@@ -500,24 +587,7 @@ h4 {
   color: var(--heat);
 }
 
-.skills {
-  margin-top: 1.6rem;
-}
-
-.skill-cols {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.skill-cols h4 {
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-}
-
-.skill-cols p {
-  margin: 0;
-  color: var(--ink-soft);
-}
-
+/* Contact */
 .contact-card {
   margin-top: 1.4rem;
   max-width: 42rem;
@@ -542,19 +612,32 @@ h4 {
   color: var(--cool);
 }
 
+/* Footer */
 .site-footer {
   padding: 1.6rem 0 2.4rem;
   color: var(--ink-soft);
   font-size: 0.92rem;
 }
 
+/* Responsive */
 @media (max-width: 900px) {
   .hero,
   .about-grid,
   .interest-grid,
-  .software-grid,
-  .skill-cols {
+  .software-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pub {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-visual {
+    display: none;
   }
 
   .nav-toggle {
@@ -576,10 +659,19 @@ h4 {
   .site-nav.is-open {
     display: flex;
   }
+
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .tool-card:hover {
+    transform: none;
   }
 }

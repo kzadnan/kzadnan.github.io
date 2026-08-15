@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="16" fill="#004d40"/>
+  <text x="60" y="50" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#fff">DeePMD</text>
+  <text x="60" y="70" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">Deep Potential</text>
+  <text x="60" y="84" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">Molecular Dynamics</text>
+  <path d="M30 100 Q45 90 60 100 Q75 110 90 100" stroke="#80cbc4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M30 106 Q45 96 60 106 Q75 116 90 106" stroke="#4db6ac" stroke-width="1.5" fill="none" opacity="0.4"/>
+</svg>
