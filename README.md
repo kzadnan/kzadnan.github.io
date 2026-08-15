@@ -28,6 +28,17 @@ git push -u origin main
 
 Then on GitHub: **Settings → Pages → Deploy from a branch → `main` / root**.
 
+## Google Search indexing
+
+The site is live at [https://kzadnan.github.io](https://kzadnan.github.io). To appear in Google search results:
+
+1. Open [Google Search Console](https://search.google.com/search-console) and add the property `https://kzadnan.github.io`.
+2. Verify ownership (HTML tag or DNS — GitHub Pages works well with the HTML tag method).
+3. Submit the sitemap: `https://kzadnan.github.io/sitemap.xml`.
+4. Use **URL Inspection** on the homepage and click **Request indexing** to speed up the first crawl.
+
+`robots.txt` and `sitemap.xml` in the repo root help search engines discover the site.
+
 ## Contents
 
 - About, education, and appointments from the CV
