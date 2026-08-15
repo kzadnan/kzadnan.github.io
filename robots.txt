@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://kzadnan.github.io/sitemap.txt
+Sitemap: https://kzadnan.github.io/sitemap/sitemap.xml
 Sitemap: https://kzadnan.github.io/sitemap.xml
