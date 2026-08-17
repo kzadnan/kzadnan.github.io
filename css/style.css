@@ -607,9 +607,16 @@ h4 {
   border-top: 1px solid var(--line);
 }
 
-.contact-list span {
+.contact-list li > span:first-child {
   font-weight: 700;
   color: var(--cool);
+}
+
+.email-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-weight: 500;
 }
 
 /* Footer */
