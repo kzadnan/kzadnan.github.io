@@ -41,9 +41,10 @@ The site is live at [https://kzadnan.github.io](https://kzadnan.github.io). To a
 
 ## Contents
 
-- About, education, and appointments from the CV
-- Research-interest section (successive interfaces, MLIPs, interlayers, WBG/UWBG thermal management, scientific ML, HPC workflows)
-- Publication cards with venue, key result, DOI, and arXiv where available
-- Open-source software and methods
+- Claim-first homepage: environment-dependent thermal boundary conductance
+- Three research themes linked to papers
+- Interface schematic with caption
+- Peer-reviewed publications with full citations
+- Collaboration and student notes (no implied open positions)
 
 Home address and phone number from the CV are intentionally omitted.

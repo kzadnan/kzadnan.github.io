@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Khalid Zobaid Adnan | Interfacial Thermal Transport</title>
-  <meta name="description" content="Khalid Zobaid Adnan is a Ph.D. candidate in Mechanical Engineering at the University of Utah. His research focuses on interfacial thermal transport, machine-learning interatomic potentials, and phonon physics in solid-solid heterostructures.">
+  <title>Khalid Zobaid Adnan | Thermal boundary conductance in heterostructures</title>
+  <meta name="description" content="Khalid Zobaid Adnan is a Ph.D. candidate in Mechanical Engineering at the University of Utah. He studies thermal boundary conductance in GaN/AlN, Si/Ge, Si/diamond, and metal/diamond stacks using DFT-trained machine-learning potentials and nonequilibrium molecular dynamics.">
   <meta name="author" content="Khalid Zobaid Adnan">
   <meta name="google-site-verification" content="PYgnlwF0awDZZ8U02YYCWoMwPbV5SCxylWDKqKboNOk">
   <link rel="canonical" href="https://kzadnan.github.io/">
@@ -31,16 +31,19 @@
         "https://scholar.google.com/citations?user=MXLTLekAAAAJ",
         "https://github.com/kzadnan",
         "https://www.linkedin.com/in/zobaid-adnan/",
-        "https://orcid.org/0009-0003-0672-8641"
+        "https://orcid.org/0009-0003-0672-8641",
+        "https://feng.mech.utah.edu/"
       ],
-      "description": "Ph.D. candidate studying interfacial thermal transport, machine-learning interatomic potentials, and phonon physics in solid-solid heterostructures."
+      "description": "Computational phonon transport: thermal boundary conductance in solid-solid heterostructures using DFT-trained machine-learning interatomic potentials and nonequilibrium molecular dynamics."
     }
   }
   </script>
-  <meta property="og:title" content="Khalid Zobaid Adnan">
-  <meta property="og:description" content="Ph.D. candidate in Mechanical Engineering at the University of Utah. Interfacial thermal transport, MLIPs, and phonon physics.">
+  <meta property="og:title" content="Khalid Zobaid Adnan | Thermal boundary conductance">
+  <meta property="og:description" content="Ph.D. candidate, University of Utah. Thermal boundary conductance depends on nearby interfaces and interlayer chemistry in GaN, AlN, Si, Ge, and diamond stacks.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kzadnan.github.io/">
+  <meta property="og:image" content="https://kzadnan.github.io/assets/profile.jpg">
+  <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -51,16 +54,16 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a class="wordmark" href="#top">KZA</a>
+      <a class="wordmark" href="#top">Adnan</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span></span><span></span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#interests">Research</a>
+        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
-        <a href="#software">Software</a>
+        <a href="#collaborate">Collaborate</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -71,108 +74,98 @@
       <div class="hero-copy">
         <p class="eyebrow">University of Utah &middot; Mechanical Engineering</p>
         <h1>Khalid Zobaid Adnan</h1>
-        <p class="lede">Ph.D. candidate researching interfacial thermal transport, machine-learning interatomic potentials, and phonon physics in solid&ndash;solid heterostructures.</p>
+        <p class="claim">Thermal boundary conductance depends on the nearby environment, not only the interface.</p>
+        <p class="lede">Ph.D. candidate in the <a href="https://feng.mech.utah.edu/" target="_blank" rel="noopener">Feng research group</a>. Computational phonon transport in GaN/AlN, Si/Ge, Si/diamond, and metal/diamond heterostructures &mdash; nonequilibrium molecular dynamics driven by machine-learning potentials trained on density-functional theory.</p>
+        <p class="thesis">Proposed thesis: interfacial thermal transport and the interplay between successive interfaces in solid&ndash;solid heterostructures.</p>
         <div class="hero-links">
-          <a class="btn btn-primary" href="mailto:khalid.adnan@utah.edu">Email</a>
-          <a class="btn" href="https://scholar.google.com/citations?user=MXLTLekAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="btn" href="https://github.com/kzadnan" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/zobaid-adnan/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://orcid.org/0009-0003-0672-8641" target="_blank" rel="noopener">ORCID</a>
+          <a class="btn btn-primary" href="#publications">Read papers</a>
+          <a class="btn" href="#research">Research themes</a>
+          <a class="btn" href="mailto:khalid.adnan@utah.edu">Email</a>
         </div>
       </div>
       <figure class="hero-photo">
-        <img src="assets/profile.jpg" alt="Khalid Zobaid Adnan" width="460" height="460">
+        <img src="assets/profile.jpg" alt="Portrait of Khalid Zobaid Adnan" width="460" height="460">
       </figure>
     </section>
+
+    <figure class="schematic" aria-labelledby="schematic-caption">
+      <svg viewBox="0 0 720 220" role="img" aria-label="Schematic of two material slabs with a temperature drop at the interface and a second interface that filters phonon modes.">
+        <rect x="20" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#d3542f" stroke-width="1.5"/>
+        <rect x="260" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#2c6e7a" stroke-width="1.5"/>
+        <rect x="500" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#c4a35a" stroke-width="1.5"/>
+        <line x1="240" y1="28" x2="240" y2="184" stroke="#c4a35a" stroke-width="2" stroke-dasharray="4 5"/>
+        <line x1="480" y1="28" x2="480" y2="184" stroke="#c4a35a" stroke-width="2" stroke-dasharray="4 5"/>
+        <text x="120" y="28" text-anchor="middle" fill="#d3542f" font-size="13" font-family="Source Sans 3, sans-serif">Hot reservoir</text>
+        <text x="360" y="28" text-anchor="middle" fill="#7eb8c0" font-size="13" font-family="Source Sans 3, sans-serif">Middle layer</text>
+        <text x="600" y="28" text-anchor="middle" fill="#c4a35a" font-size="13" font-family="Source Sans 3, sans-serif">Cold reservoir</text>
+        <path d="M36 110 C70 90, 100 130, 140 100 S190 88, 228 102" fill="none" stroke="#d3542f" stroke-width="1.5" opacity="0.85"/>
+        <path d="M36 130 C72 118, 108 148, 148 122 S192 110, 228 122" fill="none" stroke="#d3542f" stroke-width="1.1" opacity="0.45"/>
+        <path d="M272 108 C310 92, 340 128, 380 104 S430 90, 468 100" fill="none" stroke="#7eb8c0" stroke-width="1.5" opacity="0.85"/>
+        <path d="M512 118 C548 108, 580 138, 620 112 S660 102, 684 110" fill="none" stroke="#c4a35a" stroke-width="1.4" opacity="0.7"/>
+        <polyline points="40,62 228,78 252,118 468,130 492,158 680,170" fill="none" stroke="#f7f9fc" stroke-width="2.2"/>
+        <circle cx="228" cy="78" r="3.5" fill="#d3542f"/>
+        <circle cx="252" cy="118" r="3.5" fill="#7eb8c0"/>
+        <circle cx="468" cy="130" r="3.5" fill="#c4a35a"/>
+        <text x="360" y="208" text-anchor="middle" fill="#3a3f4b" font-size="13" font-family="Source Sans 3, sans-serif">Interface 1 (ΔT → TBC) · phonon filter · Interface 2</text>
+      </svg>
+      <figcaption id="schematic-caption">Nonequilibrium molecular dynamics picture of stacked interfaces. A temperature drop at a junction defines thermal boundary conductance (TBC). A second interface a finite distance away can filter which phonon modes arrive, so TBC is not a property of a single contact alone. The effect weakens once the spacer is longer than the relevant phonon mean free path (ballistic-to-diffusive crossover).</figcaption>
+    </figure>
 
     <section id="about" class="section">
       <div class="section-head">
         <p class="kicker">About</p>
-        <h2>Computational heat transfer at the nanoscale</h2>
+        <h2>The scientific challenge</h2>
       </div>
       <div class="about-grid">
         <div class="prose">
-          <p>I am a Ph.D. candidate at the University of Utah (Feng research group) studying <strong>how heat leaves a device when the bottleneck is the interfaces between materials, not the bulk crystal.</strong></p>
-          <p>I train machine-learning interatomic potentials from DFT, then run large-scale NEMD on HPC clusters to predict thermal boundary conductance at first-principles accuracy &mdash; targeting electro-thermal design rules for wide- and ultrawide-bandgap electronics.</p>
+          <p>Heat in wide- and ultrawide-bandgap electronics often stalls at material junctions, not in the bulk crystals. Thermal boundary conductance (TBC) is the interfacial heat current per unit area per unit temperature drop. Most compact models treat TBC as an intrinsic property of one interface.</p>
+          <p>I test that assumption with computation: density-functional theory (DFT) labels forces, machine-learning interatomic potentials (MLIPs) carry those forces into large cells, and nonequilibrium molecular dynamics (NEMD) extracts TBC. The work is computational, not a thermal-measurement lab. Reported TBC values below follow the quantum-corrected NEMD numbers in the cited papers unless noted.</p>
+          <p>The practical target is stacks that actually appear in high-power RF and power devices: GaN/AlN, Si/diamond, metal/diamond, and related III-nitride and group-IV junctions.</p>
         </div>
         <aside class="facts">
           <dl>
-            <dt>Affiliation</dt>
-            <dd>Mechanical Engineering, University of Utah</dd>
+            <dt>Role</dt>
+            <dd>Ph.D. candidate, Mechanical Engineering<br>University of Utah</dd>
+            <dt>Advisor / group</dt>
+            <dd><a href="https://feng.mech.utah.edu/" target="_blank" rel="noopener">Tianli Feng</a>, Feng research group</dd>
             <dt>Education</dt>
-            <dd>MSc, University of Utah &mdash; GPA 4.0/4.0, Summa Cum Laude<br>BSc, BUET &mdash; CGPA 3.53/4.00</dd>
+            <dd>MSc, University of Utah &mdash; GPA 4.0/4.0, Summa Cum Laude (top 1% in a five-year graduating window)<br>BSc, BUET &mdash; CGPA 3.53/4.00 (2016&ndash;2021)</dd>
             <dt>Methods</dt>
-            <dd>DFT &middot; NEMD &middot; MLIPs &middot; Phonopy &middot; HPC</dd>
+            <dd>DFT, NEMD, MLIPs (DeePMD, MTP), Phonopy, multi-GPU HPC</dd>
             <dt>Materials</dt>
-            <dd>GaN, AlN, Si, Ge, diamond, Al/Zr/Mo/Au</dd>
+            <dd>GaN, AlN, AlGaN, Si, Ge, diamond, Al/Zr/Mo/Au</dd>
           </dl>
         </aside>
       </div>
-
-      <div class="tools-section">
-        <h3>Tools &amp; Frameworks</h3>
-        <div class="tools-grid">
-          <div class="tool-card">
-            <img src="assets/logo-dft.svg" alt="DFT" width="80" height="80">
-            <span>DFT</span>
-          </div>
-          <div class="tool-card">
-            <img src="assets/logo-lammps.svg" alt="LAMMPS" width="80" height="80">
-            <span>LAMMPS</span>
-          </div>
-          <div class="tool-card">
-            <img src="assets/logo-deepmd.svg" alt="DeePMD" width="80" height="80">
-            <span>DeePMD</span>
-          </div>
-          <div class="tool-card">
-            <img src="assets/logo-pytorch.svg" alt="PyTorch" width="80" height="80">
-            <span>PyTorch</span>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section id="interests" class="section section-alt">
+    <section id="research" class="section section-alt">
       <div class="section-head">
-        <p class="kicker">Research interests</p>
-        <h2>Problems I am actively working on</h2>
+        <p class="kicker">Research</p>
+        <h2>Three themes</h2>
+        <p class="section-lead">One thesis, three questions: how a neighboring interface changes TBC, when an interlayer helps or hurts, and when a DFT-trained potential is required to get TBC right.</p>
       </div>
 
-      <div class="interest-grid">
-        <article class="interest">
+      <div class="theme-grid">
+        <article class="theme">
           <span class="interest-num">01</span>
-          <h3>Successive-interface phonon transport</h3>
-          <p>A nearby interface filters phonon modes, raising TBC by 1&ndash;1.5&times;. I map the critical separation distance for Si/Ge and III-nitride stacks.</p>
+          <h3>Successive interfaces</h3>
+          <p>TBC of one junction depends on what sits next door until the gap exceeds a phonon mean-free-path scale. In Si/Ge NEMD, adding a nearby interface raised TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup>. A 30 nm Si film between Ge slabs increased apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup> by admitting low-frequency heat-carrying modes. In GaN/AlN, a standalone interface is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction; a second nearby interface can raise that to about 1000 MW m<sup>−2</sup> K<sup>−1</sup> by ballistic filtering of existing bulk modes, not superlattice minibands.</p>
+          <p class="theme-links"><a href="#pub-prb-2024">Phys. Rev. B 109, 245302 (2024)</a> · <a href="#pub-prb-2025">Phys. Rev. B 112, 235308 (2025)</a></p>
         </article>
 
-        <article class="interest">
+        <article class="theme">
           <span class="interest-num">02</span>
-          <h3>MLIPs for heterogeneous interfaces</h3>
-          <p>DeePMD and MTP models trained on DFT forces for chemically abrupt and mixed interfaces &mdash; driving NEMD at lengths inaccessible to direct DFT.</p>
+          <h3>Interlayers and alloys</h3>
+          <p>A nanometer film can bridge mismatched vibrations or add scattering. For Si/diamond, quantum-corrected NEMD with an MLIP gives a bare TBC of 130 MW m<sup>−2</sup> K<sup>−1</sup> (near experiment ~140), versus 310 from Tersoff MD. A 1 nm SiN<sub>x</sub> interlayer raises TBC to 275; amorphous carbon to 350, by supplying intermediate phonon modes. For GaN/AlN, an Al<sub>1−x</sub>Ga<sub>x</sub>N interlayer <em>reduces</em> TBC over the alloy range &mdash; alloy scattering outweighs the usual phonon-bridge picture. A sigmoidal Al-composition grade recovers conductance relative to an abrupt or linear profile.</p>
+          <p class="theme-links"><a href="#pub-pra-2026">Phys. Rev. Applied 25, 044013 (2026)</a> · <a href="#pub-apl-2026">Appl. Phys. Lett. 128, 122201 (2026)</a></p>
         </article>
 
-        <article class="interest">
+        <article class="theme">
           <span class="interest-num">03</span>
-          <h3>Interlayer &amp; composition engineering</h3>
-          <p>1 nm SiN<sub>x</sub> doubles Si/diamond TBC; a-C raises it to ~350 MW/m&sup2;K. AlGaN interlayers at GaN/AlN degrade TBC via alloy scattering.</p>
-        </article>
-
-        <article class="interest">
-          <span class="interest-num">04</span>
-          <h3>WBG / UWBG thermal management</h3>
-          <p>Quantifying TBC for GaN/AlN, GaN/diamond, Si/diamond, and metal/diamond contacts relevant to high-power RF and AI accelerators.</p>
-        </article>
-
-        <article class="interest">
-          <span class="interest-num">05</span>
-          <h3>Scientific machine learning</h3>
-          <p>Autoencoder&ndash;DMD phonon mode extraction, harmonic MLIPs in JAX, and grey-model MFP estimates for amorphous interlayers.</p>
-        </article>
-
-        <article class="interest">
-          <span class="interest-num">06</span>
-          <h3>HPC simulation workflows</h3>
-          <p>End-to-end pipelines: structure generation &rarr; DFT labeling &rarr; MLIP training &rarr; NEMD TBC extraction on multi-GPU clusters with active learning.</p>
+          <h3>DFT-trained interface MLIPs</h3>
+          <p>Empirical potentials often misrepresent interfacial bonding. DeePMD and MTP models trained on DFT forces are used to drive NEMD in cells too large for direct DFT. For relaxed Al, Mo, Zr, and Au on diamond, quantum-corrected TBC values are about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup>. Those resistances track the metal phonon specific heat and Debye temperature more closely than elastic modulus, and acoustic/diffuse mismatch models miss interfacial structure and inelastic transmission even with full-band DFT phonons.</p>
+          <p class="theme-links"><a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer 235, 126227 (2024)</a> · <a href="#software">Research software</a></p>
         </article>
       </div>
     </section>
@@ -181,118 +174,132 @@
       <div class="section-head">
         <p class="kicker">Publications</p>
         <h2>Peer-reviewed papers</h2>
-        <p class="section-lead">First-author work is marked. Full records: <a href="https://scholar.google.com/citations?user=MXLTLekAAAAJ" target="_blank" rel="noopener">Scholar profile</a>.</p>
-        <div class="pub-filters" role="tablist" aria-label="Filter publications">
-          <button class="filter is-active" data-filter="all" type="button">All</button>
-          <button class="filter" data-filter="first" type="button">First author</button>
+        <p class="section-lead">Reverse chronological order. First-author work is marked. Full records: <a href="https://scholar.google.com/citations?user=MXLTLekAAAAJ" target="_blank" rel="noopener">Google Scholar</a>. Citation counts are omitted here so they do not go stale; use Scholar for current numbers.</p>
+        <div class="pub-filters" role="group" aria-label="Filter publications">
+          <button class="filter is-active" data-filter="all" type="button" aria-pressed="true">All papers</button>
+          <button class="filter" data-filter="first" type="button" aria-pressed="false">First author</button>
         </div>
       </div>
 
       <ol class="pub-list">
-        <li class="pub" data-role="first">
-          <div class="pub-visual">
-            <div class="journal-badge journal-apl">APL</div>
-          </div>
+        <li class="pub" id="pub-apl-2026" data-role="first">
           <div class="pub-content">
             <div class="pub-meta">
-              <span class="venue venue-apl">Applied Physics Letters</span>
+              <span class="venue">Applied Physics Letters</span>
               <span class="year">2026</span>
               <span class="badge">First author</span>
             </div>
-            <h3>Significant impact of Al<sub>1&minus;x</sub>Ga<sub>x</sub>N interlayer on GaN/AlN thermal boundary conductance</h3>
+            <h3>Significant impact of Al<sub>1−x</sub>Ga<sub>x</sub>N interlayer on GaN/AlN thermal boundary conductance</h3>
             <p class="authors"><strong>Khalid Zobaid Adnan</strong>, Hao Zhou, and Tianli Feng</p>
-            <p class="highlight">AlGaN interlayer <em>reduces</em> GaN/AlN TBC &mdash; alloy scattering beats phonon-bridge intuition. Sigmoidal composition grade recovers conductance.</p>
+            <p class="cite">Appl. Phys. Lett. <strong>128</strong>, 122201 (2026).</p>
+            <p class="highlight">AlGaN between GaN and AlN reduces TBC over the full alloy range; a sigmoidal composition grade recovers conductance relative to abrupt or linear profiles.</p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1063/5.0323350" target="_blank" rel="noopener">DOI</a>
-              <a href="https://arxiv.org/abs/2601.12151" target="_blank" rel="noopener">arXiv</a>
+              <a href="https://doi.org/10.1063/5.0323350" target="_blank" rel="noopener">DOI for AlGaN interlayer paper</a>
+              <a href="https://arxiv.org/abs/2601.12151" target="_blank" rel="noopener">arXiv:2601.12151</a>
             </div>
           </div>
         </li>
 
-        <li class="pub" data-role="first">
-          <div class="pub-visual">
-            <div class="journal-badge journal-pra">PRA</div>
-          </div>
+        <li class="pub" id="pub-pra-2026" data-role="first">
           <div class="pub-content">
             <div class="pub-meta">
-              <span class="venue venue-pra">Physical Review Applied</span>
+              <span class="venue">Physical Review Applied</span>
               <span class="year">2026</span>
               <span class="badge">First author</span>
             </div>
             <h3>Si/diamond thermal boundary conductance enhanced by SiN<sub>x</sub> and amorphous carbon interlayers</h3>
             <p class="authors"><strong>Khalid Zobaid Adnan</strong>, Tanvirul Abedien, and Tianli Feng</p>
-            <p class="highlight">MLIP-driven NEMD: bare Si/diamond TBC = 130 MW/m&sup2;K. 1 nm SiN<sub>x</sub> doubles it to 275; a-C reaches 350.</p>
+            <p class="cite">Phys. Rev. Applied <strong>25</strong>, 044013 (2026).</p>
+            <p class="highlight">After quantum correction, bare Si/diamond TBC is 130 MW m<sup>−2</sup> K<sup>−1</sup>; 1 nm SiN<sub>x</sub> gives 275, amorphous carbon 350.</p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1103/84jf-svtg" target="_blank" rel="noopener">DOI</a>
-              <a href="https://journals.aps.org/prapplied/abstract/10.1103/84jf-svtg" target="_blank" rel="noopener">Journal</a>
+              <a href="https://doi.org/10.1103/84jf-svtg" target="_blank" rel="noopener">DOI for Si/diamond interlayer paper</a>
+              <a href="https://journals.aps.org/prapplied/abstract/10.1103/84jf-svtg" target="_blank" rel="noopener">Physical Review Applied article</a>
             </div>
           </div>
         </li>
 
-        <li class="pub" data-role="coauthor">
-          <div class="pub-visual">
-            <div class="journal-badge journal-prb">PRB</div>
-          </div>
+        <li class="pub" id="pub-prb-2025" data-role="coauthor">
           <div class="pub-content">
             <div class="pub-meta">
-              <span class="venue venue-prb">Physical Review B</span>
+              <span class="venue">Physical Review B</span>
               <span class="year">2025</span>
             </div>
-            <h3>Thermal boundary conductance in standalone and nonstandalone GaN/AlN heterostructures</h3>
+            <h3>Thermal boundary conductance in standalone and non-standalone GaN/AlN heterostructures predicted using machine-learning interatomic potentials</h3>
             <p class="authors">Hao Zhou, <strong>Khalid Zobaid Adnan</strong>, Wyatt Allen Jones, and Tianli Feng</p>
-            <p class="highlight">Standalone GaN/AlN TBC ~600 MW/m&sup2;K at 300 K. A second nearby interface raises it to ~1000 via ballistic phonon filtering.</p>
+            <p class="cite">Phys. Rev. B <strong>112</strong>, 235308 (2025).</p>
+            <p class="highlight">Standalone GaN/AlN TBC is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction; a nearby second interface can raise it to about 1000 by ballistic filtering.</p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1103/w7qp-tl6z" target="_blank" rel="noopener">DOI</a>
-              <a href="https://arxiv.org/abs/2503.05084" target="_blank" rel="noopener">arXiv</a>
+              <a href="https://doi.org/10.1103/w7qp-tl6z" target="_blank" rel="noopener">DOI for GaN/AlN standalone paper</a>
+              <a href="https://arxiv.org/abs/2503.05084" target="_blank" rel="noopener">arXiv:2503.05084</a>
             </div>
           </div>
         </li>
 
-        <li class="pub" data-role="first">
-          <div class="pub-visual">
-            <div class="journal-badge journal-ijhmt">IJHMT</div>
-          </div>
+        <li class="pub" id="pub-ijhmt-2024" data-role="first">
           <div class="pub-content">
             <div class="pub-meta">
-              <span class="venue venue-ijhmt">Int. J. Heat Mass Transfer</span>
+              <span class="venue">International Journal of Heat and Mass Transfer</span>
               <span class="year">2024</span>
               <span class="badge">First author</span>
-              <span class="cites">24 citations</span>
             </div>
             <h3>Thermal boundary conductance of metal&ndash;diamond interfaces predicted by machine learning interatomic potentials</h3>
             <p class="authors"><strong>Khalid Zobaid Adnan</strong>, Mahesh R. Neupane, and Tianli Feng</p>
-            <p class="highlight">MLIPs for Al, Mo, Zr, Au on diamond. TBC correlates with metal Debye temperature, not elastic modulus.</p>
+            <p class="cite">Int. J. Heat Mass Transfer <strong>235</strong>, 126227 (2024).</p>
+            <p class="highlight">Quantum-corrected TBC for Al, Mo, Zr, and Au on diamond is about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup>; TBC tracks metal Debye temperature more than elastic modulus.</p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1016/j.ijheatmasstransfer.2024.126227" target="_blank" rel="noopener">DOI</a>
-              <a href="https://arxiv.org/abs/2404.15465" target="_blank" rel="noopener">arXiv</a>
+              <a href="https://doi.org/10.1016/j.ijheatmasstransfer.2024.126227" target="_blank" rel="noopener">DOI for metal–diamond paper</a>
+              <a href="https://arxiv.org/abs/2404.15465" target="_blank" rel="noopener">arXiv:2404.15465</a>
             </div>
           </div>
         </li>
 
-        <li class="pub" data-role="first">
-          <div class="pub-visual">
-            <div class="journal-badge journal-prb">PRB</div>
-          </div>
+        <li class="pub" id="pub-prb-2024" data-role="first">
           <div class="pub-content">
             <div class="pub-meta">
-              <span class="venue venue-prb">Physical Review B</span>
+              <span class="venue">Physical Review B</span>
               <span class="year">2024</span>
               <span class="badge">First author</span>
-              <span class="cites">14 citations</span>
             </div>
             <h3>Thermal boundary conductance and thermal conductivity strongly depend on nearby environment</h3>
             <p class="authors"><strong>Khalid Zobaid Adnan</strong> and Tianli Feng</p>
-            <p class="highlight">Adding a nearby interface raises Si/Ge TBC from 400 to 700 MW/m&sup2;K. Sandwiching Si between Ge yields apparent &kappa; above bulk.</p>
+            <p class="cite">Phys. Rev. B <strong>109</strong>, 245302 (2024).</p>
+            <p class="highlight">A nearby interface after Si/Ge raised TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup>. A 30 nm Si layer between Ge increased apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup>.</p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">DOI</a>
-              <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">Journal</a>
+              <a href="https://doi.org/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">DOI for nearby-environment paper</a>
+              <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">Physical Review B article</a>
             </div>
           </div>
         </li>
       </ol>
     </section>
 
-    <section id="experience" class="section section-alt">
+    <section id="software" class="section section-alt">
+      <div class="section-head">
+        <p class="kicker">Methods and software</p>
+        <h2>How the calculations are done</h2>
+        <p class="section-lead">Typical loop: build an interfacial supercell, label forces with DFT (VASP or Quantum ESPRESSO), train DeePMD or MTP, run NEMD in LAMMPS or GPUMD on multi-GPU clusters, and extract TBC from the steady temperature drop. Phonopy is used for bulk phonon checks. This is not a first-principles TBC calculation; the MLIP is trained to DFT forces and then used at MD length scales.</p>
+      </div>
+      <div class="software-grid">
+        <article class="soft">
+          <h3><a href="https://github.com/kzadnan/Machine_Learning_Interatomic_Potential_for_interfaced_Materials" target="_blank" rel="noopener">MLIPs for interfaced materials</a></h3>
+          <p>DeePMD and MTP potentials for heterogeneous interfaces (including Si/diamond and Au/diamond), packaged for LAMMPS TBC runs.</p>
+        </article>
+        <article class="soft">
+          <h3><a href="https://github.com/kzadnan/JAX-MLIP" target="_blank" rel="noopener">JAX-MLIP</a></h3>
+          <p>Harmonic-constrained potentials in JAX that learn force-constant structure from displacement data.</p>
+        </article>
+        <article class="soft">
+          <h3><a href="https://github.com/kzadnan/Autoencoder_NN_DMD" target="_blank" rel="noopener">Autoencoder DMD</a></h3>
+          <p>Mode extraction and reconstruction of ab initio molecular-dynamics trajectories with dynamic mode decomposition.</p>
+        </article>
+      </div>
+      <div class="coursework">
+        <h3>Coursework codes</h3>
+        <p>Separate from the thesis: a <a href="https://github.com/kzadnan/blackbody_radiation" target="_blank" rel="noopener">radiation heat-transfer solver</a> and <a href="https://github.com/kzadnan/Design_problem_HX" target="_blank" rel="noopener">heat-exchanger design models</a> (Python/EES).</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
       <div class="section-head">
         <p class="kicker">Appointments</p>
         <h2>Research and teaching</h2>
@@ -305,9 +312,9 @@
             <p class="when">Spring 2023 &ndash; present</p>
           </header>
           <ul>
-            <li>Interfacial thermal transport in Si/Ge, metal/diamond, GaN/AlGaN stacks</li>
-            <li>Large-scale MD and DFT on multi-GPU HPC clusters</li>
-            <li>MLIPs trained from AIMD at &gt;95% force accuracy</li>
+            <li>Interfacial thermal transport in Si/Ge, metal/diamond, Si/diamond, and GaN/AlGaN stacks</li>
+            <li>DFT and molecular dynamics on multi-GPU HPC with SLURM</li>
+            <li>MLIPs trained from DFT and AIMD force data for those interfaces</li>
           </ul>
         </article>
         <article class="post">
@@ -317,8 +324,8 @@
             <p class="when">Fall 2023, Fall 2025, Spring 2026</p>
           </header>
           <ul>
-            <li>Numerical methods for engineering modeling (60 students)</li>
-            <li>96% rating for grading clarity</li>
+            <li>Numerical methods for undergraduate engineering modeling (about 60 students)</li>
+            <li>Office hours and exam grading</li>
           </ul>
         </article>
         <article class="post">
@@ -328,7 +335,7 @@
             <p class="when">Oct 2021 &ndash; Sep 2022</p>
           </header>
           <ul>
-            <li>Designed first OBE curriculum for introductory mechanical/mechatronics sequence</li>
+            <li>First draft of an outcome-based introductory mechanical/mechatronics curriculum</li>
           </ul>
         </article>
       </div>
@@ -339,12 +346,14 @@
           <div>
             <h4>Ph.D., Mechanical Engineering</h4>
             <p>University of Utah &middot; Jan 2023 &ndash; present</p>
+            <p class="muted">Proposed thesis: interfacial thermal transport and the interplay between successive interfaces in solid&ndash;solid heterostructures.</p>
           </div>
         </article>
         <article class="edu">
           <div>
             <h4>MSc, Mechanical Engineering</h4>
-            <p>University of Utah &middot; GPA 4.0/4.0 &middot; Summa Cum Laude</p>
+            <p>University of Utah &middot; Jan 2023 &ndash; Dec 2025 &middot; GPA 4.0/4.0</p>
+            <p class="muted">Summa Cum Laude (top 1% among the graduating class of a five-year period).</p>
           </div>
         </article>
         <article class="edu">
@@ -357,46 +366,29 @@
       </div>
     </section>
 
-    <section id="software" class="section">
+    <section id="collaborate" class="section section-alt">
       <div class="section-head">
-        <p class="kicker">Software</p>
-        <h2>Open-source tools</h2>
+        <p class="kicker">Collaborate</p>
+        <h2>Working together</h2>
       </div>
-      <div class="software-grid">
+      <div class="collab-grid">
         <article class="soft">
-          <h3><a href="https://github.com/kzadnan/Machine_Learning_Interatomic_Potential_for_interfaced_Materials" target="_blank" rel="noopener">MLIPs for interfaced materials</a></h3>
-          <p>DeePMD and MTP potentials for heterogeneous interfaces, packaged for LAMMPS TBC simulations.</p>
+          <h3>Research collaborations</h3>
+          <p>I welcome theory&ndash;experiment comparisons of TBC in GaN/AlN, Si/diamond, and metal/diamond stacks, and reuse of DFT-trained interface potentials in device-scale models. The usual mode is computational (MLIP, NEMD, HPC). I do not run time-domain thermoreflectance in-house. Email <a href="mailto:khalid.adnan@utah.edu">khalid.adnan@utah.edu</a> with the stack, temperature range, and what you want compared.</p>
         </article>
         <article class="soft">
-          <h3><a href="https://github.com/kzadnan/JAX-MLIP" target="_blank" rel="noopener">JAX-MLIP</a></h3>
-          <p>Harmonic-constrained ML potentials in JAX that learn force-constant structure from displacement data.</p>
-        </article>
-        <article class="soft">
-          <h3><a href="https://github.com/kzadnan/Autoencoder_NN_DMD" target="_blank" rel="noopener">Autoencoder DMD</a></h3>
-          <p>Phonon-relevant mode extraction and AIMD trajectory reconstruction via dynamic mode decomposition.</p>
-        </article>
-        <article class="soft">
-          <h3><a href="https://github.com/kzadnan/blackbody_radiation" target="_blank" rel="noopener">Radiation solver</a></h3>
-          <p>Spectral and total emissive power solver for participating media.</p>
-        </article>
-        <article class="soft">
-          <h3><a href="https://github.com/kzadnan/Design_problem_HX" target="_blank" rel="noopener">Heat-exchanger design</a></h3>
-          <p>Python/EES models for solar and brine-reheat heat exchangers.</p>
-        </article>
-        <article class="soft">
-          <h3>Amorphous phonon MFP</h3>
-          <p>Grey-model code for thermal conductivity of amorphous interlayers.</p>
+          <h3>For students</h3>
+          <p>This page does not list open research-assistant positions. Students interested in computational thermal transport (mechanical engineering, materials science, or physics; Python; willingness to learn DFT and MD) may email a short note, a CV, and one paper they found interesting. Admission and funding are through the University of Utah.</p>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
       <div class="section-head">
         <p class="kicker">Contact</p>
-        <h2>Get in touch</h2>
+        <h2>Profiles</h2>
       </div>
       <div class="contact-card">
-        <p>Happy to talk about interfacial thermal transport, MLIPs, collaborations, and open scientific software.</p>
         <ul class="contact-list">
           <li>
             <span>Email</span>
@@ -405,10 +397,10 @@
               <a href="mailto:khalidzobaidme167@gmail.com">khalidzobaidme167@gmail.com</a>
             </span>
           </li>
-          <li><span>Scholar</span> <a href="https://scholar.google.com/citations?user=MXLTLekAAAAJ" target="_blank" rel="noopener">Khalid Zobaid Adnan</a></li>
+          <li><span>Scholar</span> <a href="https://scholar.google.com/citations?user=MXLTLekAAAAJ" target="_blank" rel="noopener">Google Scholar profile</a></li>
+          <li><span>ORCID</span> <a href="https://orcid.org/0009-0003-0672-8641" target="_blank" rel="noopener">0009-0003-0672-8641</a></li>
           <li><span>GitHub</span> <a href="https://github.com/kzadnan" target="_blank" rel="noopener">github.com/kzadnan</a></li>
           <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/zobaid-adnan/" target="_blank" rel="noopener">linkedin.com/in/zobaid-adnan</a></li>
-          <li><span>ORCID</span> <a href="https://orcid.org/0009-0003-0672-8641" target="_blank" rel="noopener">0009-0003-0672-8641</a></li>
           <li><span>Group</span> <a href="https://feng.mech.utah.edu/" target="_blank" rel="noopener">Feng Research Group</a></li>
         </ul>
       </div>

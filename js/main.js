@@ -19,14 +19,19 @@ if (toggle && nav) {
     link.addEventListener("click", () => {
       nav.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
     });
   });
 }
 
 filters.forEach((button) => {
   button.addEventListener("click", () => {
-    filters.forEach((item) => item.classList.remove("is-active"));
+    filters.forEach((item) => {
+      item.classList.remove("is-active");
+      item.setAttribute("aria-pressed", "false");
+    });
     button.classList.add("is-active");
+    button.setAttribute("aria-pressed", "true");
     const mode = button.dataset.filter;
     pubs.forEach((pub) => {
       const show = mode === "all" || pub.dataset.role === "first";
