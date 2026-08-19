@@ -120,7 +120,7 @@
         <div class="prose">
           <p>Heat in wide- and ultrawide-bandgap electronics often stalls at material junctions, not in the bulk crystals. Thermal boundary conductance (TBC) is the interfacial heat current per unit area per unit temperature drop. Most compact models treat TBC as an intrinsic property of one interface.</p>
           <p>I test that assumption with computation: density-functional theory (DFT) labels forces, machine-learning interatomic potentials (MLIPs) carry those forces into large cells, and nonequilibrium molecular dynamics (NEMD) extracts TBC. The work is computational, not a thermal-measurement lab. Reported TBC values below follow the quantum-corrected NEMD numbers in the cited papers unless noted.</p>
-          <p>The practical target is stacks that actually appear in high-power RF and power devices: GaN/AlN, Si/diamond, metal/diamond, and related III-nitride and group-IV junctions.</p>
+          <p>The practical target is stacks that appear in high-power RF and power devices: GaN/AlN, Si/diamond, metal/diamond, and GaN/diamond.</p>
         </div>
         <aside class="facts">
           <dl>
@@ -134,6 +134,8 @@
             <dd>DFT, NEMD, MLIPs (DeePMD, MTP), Phonopy, multi-GPU HPC</dd>
             <dt>Materials</dt>
             <dd>GaN, AlN, AlGaN, Si, Ge, diamond, Al/Zr/Mo/Au</dd>
+            <dt>Partners</dt>
+            <dd>U.S. Army DEVCOM (metal/diamond); Sandia National Laboratories (GaN/diamond, in progress)</dd>
           </dl>
         </aside>
       </div>
@@ -164,7 +166,7 @@
         <article class="theme">
           <span class="interest-num">03</span>
           <h3>DFT-trained interface MLIPs</h3>
-          <p>Empirical potentials often misrepresent interfacial bonding. DeePMD and MTP models trained on DFT forces are used to drive NEMD in cells too large for direct DFT. For relaxed Al, Mo, Zr, and Au on diamond, quantum-corrected TBC values are about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup>. Those resistances track the metal phonon specific heat and Debye temperature more closely than elastic modulus, and acoustic/diffuse mismatch models miss interfacial structure and inelastic transmission even with full-band DFT phonons.</p>
+          <p>Empirical potentials often misrepresent interfacial bonding. DeePMD and MTP models trained on DFT forces are used to drive NEMD in cells too large for direct DFT. For relaxed Al, Mo, Zr, and Au on diamond, quantum-corrected TBC values are about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup> &mdash; work carried out with U.S. Army DEVCOM Army Research Laboratory. Those resistances track the metal phonon specific heat and Debye temperature more closely than elastic modulus. Acoustic and diffuse mismatch models miss interfacial structure and inelastic transmission even with full-band DFT phonons. GaN/diamond TBC with Sandia National Laboratories is in progress.</p>
           <p class="theme-links"><a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer 235, 126227 (2024)</a> · <a href="#software">Research software</a></p>
         </article>
       </div>
@@ -244,7 +246,7 @@
             </div>
             <h3>Thermal boundary conductance of metal&ndash;diamond interfaces predicted by machine learning interatomic potentials</h3>
             <p class="authors"><strong>Khalid Zobaid Adnan</strong>, Mahesh R. Neupane, and Tianli Feng</p>
-            <p class="cite">Int. J. Heat Mass Transfer <strong>235</strong>, 126227 (2024).</p>
+            <p class="cite">Int. J. Heat Mass Transfer <strong>235</strong>, 126227 (2024). With U.S. Army DEVCOM Army Research Laboratory.</p>
             <p class="highlight">Quantum-corrected TBC for Al, Mo, Zr, and Au on diamond is about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup>; TBC tracks metal Debye temperature more than elastic modulus.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1016/j.ijheatmasstransfer.2024.126227" target="_blank" rel="noopener">DOI for metal–diamond paper</a>
@@ -312,7 +314,7 @@
             <p class="when">Spring 2023 &ndash; present</p>
           </header>
           <ul>
-            <li>Interfacial thermal transport in Si/Ge, metal/diamond, Si/diamond, and GaN/AlGaN stacks</li>
+            <li>Interfacial thermal transport in Si/Ge, metal/diamond, Si/diamond, GaN/AlGaN, and GaN/diamond stacks</li>
             <li>DFT and molecular dynamics on multi-GPU HPC with SLURM</li>
             <li>MLIPs trained from DFT and AIMD force data for those interfaces</li>
           </ul>
@@ -374,7 +376,7 @@
       <div class="collab-grid">
         <article class="soft">
           <h3>Research collaborations</h3>
-          <p>I welcome theory&ndash;experiment comparisons of TBC in GaN/AlN, Si/diamond, and metal/diamond stacks, and reuse of DFT-trained interface potentials in device-scale models. The usual mode is computational (MLIP, NEMD, HPC). I do not run time-domain thermoreflectance in-house. Email <a href="mailto:khalid.adnan@utah.edu">khalid.adnan@utah.edu</a> with the stack, temperature range, and what you want compared.</p>
+          <p>Published metal/diamond TBC work was done with U.S. Army DEVCOM Army Research Laboratory (<a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer 235, 126227</a>). That collaboration can continue on metal&ndash;diamond heat spreading. Current work with Sandia National Laboratories is GaN/diamond thermal boundary conductance (computational; not yet listed as a paper here). I also welcome theory&ndash;experiment comparisons on GaN/AlN and Si/diamond, and reuse of DFT-trained interface potentials in device-scale models. I do not run time-domain thermoreflectance in-house. Email <a href="mailto:khalid.adnan@utah.edu">khalid.adnan@utah.edu</a> with the stack, temperature range, and what you want compared.</p>
         </article>
         <article class="soft">
           <h3>For students</h3>
