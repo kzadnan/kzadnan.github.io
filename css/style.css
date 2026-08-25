@@ -428,6 +428,29 @@ h4 {
   color: var(--ink-soft);
 }
 
+.talk-list {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.talk-list li + li {
+  margin-top: 0.6rem;
+}
+
+.contrib {
+  margin: 0.6rem 0 0.7rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--cool);
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+}
+
+.contrib strong {
+  color: var(--ink);
+}
+
 /* Publications */
 .pub-filters {
   display: flex;

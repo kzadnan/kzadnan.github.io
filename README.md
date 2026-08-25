@@ -44,7 +44,25 @@ The site is live at [https://kzadnan.github.io](https://kzadnan.github.io). To a
 - Claim-first homepage: environment-dependent thermal boundary conductance
 - Three research themes linked to papers
 - Interface schematic with caption
-- Peer-reviewed publications with full citations
+- Device-level relevance: finite-element silicon-on-diamond results tying TBC to hot-spot temperature
+- Peer-reviewed publications with full citations and a per-paper contribution statement
+- Conference presentations (SHTC 2025 and poster)
+- Teaching with course numbers, funding (NSF CAREER CBET-2337749), and expected graduation
 - Collaboration and student notes (no implied open positions)
 
 Home address and phone number from the CV are intentionally omitted.
+
+## CV
+
+`cv/index.html` is the source of truth for the CV. Regenerate the PDF after editing it:
+
+```bash
+python -m http.server 8766
+# in another shell, from the repo root:
+chrome --headless --no-pdf-header-footer \
+  --print-to-pdf="$PWD/assets/CV_Khalid_Zobaid_Adnan.pdf" \
+  http://localhost:8766/cv/index.html
+```
+
+Chrome caches aggressively between renders; if the output looks stale, render with a
+throwaway `--user-data-dir`.

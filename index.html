@@ -80,6 +80,7 @@
         <div class="hero-links">
           <a class="btn btn-primary" href="#publications">Read papers</a>
           <a class="btn" href="#research">Research themes</a>
+          <a class="btn" href="assets/CV_Khalid_Zobaid_Adnan.pdf">Curriculum vitae (PDF)</a>
           <a class="btn" href="mailto:khalid.adnan@utah.edu">Email</a>
         </div>
       </div>
@@ -88,7 +89,7 @@
       </figure>
     </section>
 
-    <figure class="schematic" aria-labelledby="schematic-caption">
+    <figure class="schematic" id="interplay-figure" aria-labelledby="schematic-caption">
       <svg viewBox="0 0 720 220" role="img" aria-label="Schematic of two material slabs with a temperature drop at the interface and a second interface that filters phonon modes.">
         <rect x="20" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#d3542f" stroke-width="1.5"/>
         <rect x="260" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#2c6e7a" stroke-width="1.5"/>
@@ -121,6 +122,7 @@
           <p>Heat in wide- and ultrawide-bandgap electronics often stalls at material junctions, not in the bulk crystals. Thermal boundary conductance (TBC) is the interfacial heat current per unit area per unit temperature drop. Most compact models treat TBC as an intrinsic property of one interface.</p>
           <p>I test that assumption with computation: density-functional theory (DFT) labels forces, machine-learning interatomic potentials (MLIPs) carry those forces into large cells, and nonequilibrium molecular dynamics (NEMD) extracts TBC. The work is computational, not a thermal-measurement lab. Reported TBC values below follow the quantum-corrected NEMD numbers in the cited papers unless noted.</p>
           <p>The practical target is stacks that appear in high-power RF and power devices: GaN/AlN, Si/diamond, metal/diamond, and GaN/diamond.</p>
+          <p>These interface numbers change device outcomes. In the Si/diamond study I coupled the atomistic TBC results to a finite-element silicon-on-diamond device model. Raising Si/diamond TBC from 50 to 350 MW m<sup>−2</sup> K<sup>−1</sup> lowers the hot-spot temperature rise from about 135 K to about 105 K for a 1 &micro;m Si layer on 50 &micro;m diamond. Once the Si layer drops below roughly 0.7 &micro;m and spreading resistance dominates, the same TBC increase cuts the peak rise from about 165 K to about 95 K. Because roughly 10 K of junction-temperature reduction can extend device lifetime by about 50%, interfacial engineering is a reliability lever for power and RF electronics rather than a second-order correction.</p>
         </div>
         <aside class="facts">
           <dl>
@@ -136,6 +138,12 @@
             <dd>GaN, AlN, AlGaN, Si, Ge, diamond, Al/Zr/Mo/Au</dd>
             <dt>Partners</dt>
             <dd>U.S. Army DEVCOM (metal/diamond); Sandia National Laboratories (GaN/diamond, in progress)</dd>
+            <dt>Funding</dt>
+            <dd>NSF CAREER award CBET-2337749, &ldquo;Prediction and understanding of thermal transport across successive interfaces&rdquo; (PI: Tianli Feng, 2024&ndash;2029). Computing through CHPC at the University of Utah and Bridges-2 at the Pittsburgh Supercomputing Center via NSF ACCESS.</dd>
+            <dt>Expected graduation</dt>
+            <dd>Summer 2027. Seeking postdoctoral or research-scientist positions in computational thermal transport, and open to tenure-track applications.</dd>
+            <dt>CV</dt>
+            <dd><a href="assets/CV_Khalid_Zobaid_Adnan.pdf">Download CV (PDF)</a></dd>
           </dl>
         </aside>
       </div>
@@ -153,7 +161,8 @@
           <span class="interest-num">01</span>
           <h3>Successive interfaces</h3>
           <p>TBC of one junction depends on what sits next door until the gap exceeds a phonon mean-free-path scale. In Si/Ge NEMD, adding a nearby interface raised TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup>. A 30 nm Si film between Ge slabs increased apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup> by admitting low-frequency heat-carrying modes. In GaN/AlN, a standalone interface is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction; a second nearby interface can raise that to about 1000 MW m<sup>−2</sup> K<sup>−1</sup> by ballistic filtering of existing bulk modes, not superlattice minibands.</p>
-          <p class="theme-links"><a href="#pub-prb-2024">Phys. Rev. B 109, 245302 (2024)</a> · <a href="#pub-prb-2025">Phys. Rev. B 112, 235308 (2025)</a></p>
+          <p class="contrib"><strong>My contribution.</strong> First-author demonstration of the effect in Si/Ge, and the methodological framing the group&rsquo;s later successive-interface work builds on: how to set up, size, and interpret multi-interface NEMD cells so that genuine interface&ndash;interface interplay is separable from finite-size artifacts. That framework sets the agenda for the rest of the thesis.</p>
+          <p class="theme-links"><a href="#interplay-figure">Interplay schematic</a> · <a href="#pub-prb-2024">Phys. Rev. B 109, 245302 (2024)</a> · <a href="#pub-prb-2025">Phys. Rev. B 112, 235308 (2025)</a></p>
         </article>
 
         <article class="theme">
@@ -195,6 +204,7 @@
             <p class="authors"><strong>Khalid Zobaid Adnan</strong>, Hao Zhou, and Tianli Feng</p>
             <p class="cite">Appl. Phys. Lett. <strong>128</strong>, 122201 (2026).</p>
             <p class="highlight">AlGaN between GaN and AlN reduces TBC over the full alloy range; a sigmoidal composition grade recovers conductance relative to abrupt or linear profiles.</p>
+            <p class="contrib"><strong>My contribution.</strong> Compositional disorder in AlGaN makes the potential-energy surface far more complex than a binary interface, since every alloy composition is effectively a different material. Instead of trying to cover the whole alloy space, I trained the potential only on the structures relevant to the compositions and interface geometries actually simulated, which kept the fit accurate at tractable cost, then ran the NEMD showing that alloy scattering outweighs the usual phonon-bridge benefit.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1063/5.0323350" target="_blank" rel="noopener">DOI for AlGaN interlayer paper</a>
               <a href="https://arxiv.org/abs/2601.12151" target="_blank" rel="noopener">arXiv:2601.12151</a>
@@ -213,6 +223,7 @@
             <p class="authors"><strong>Khalid Zobaid Adnan</strong>, Tanvirul Abedien, and Tianli Feng</p>
             <p class="cite">Phys. Rev. Applied <strong>25</strong>, 044013 (2026).</p>
             <p class="highlight">After quantum correction, bare Si/diamond TBC is 130 MW m<sup>−2</sup> K<sup>−1</sup>; 1 nm SiN<sub>x</sub> gives 275, amorphous carbon 350.</p>
+            <p class="contrib"><strong>My contribution.</strong> Si and diamond are badly lattice-mismatched, and the usual expectation is that the resulting interfacial strain destroys any clean phonon description. I showed that it does not: the junction carries high strain, yet mode-resolved transport stays interpretable, so interlayer choice can still be reasoned about in phonon terms instead of being treated as a disordered black box. I also built the finite-element silicon-on-diamond device model that converts these TBC values into hot-spot temperature.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1103/84jf-svtg" target="_blank" rel="noopener">DOI for Si/diamond interlayer paper</a>
               <a href="https://journals.aps.org/prapplied/abstract/10.1103/84jf-svtg" target="_blank" rel="noopener">Physical Review Applied article</a>
@@ -230,6 +241,7 @@
             <p class="authors">Hao Zhou, <strong>Khalid Zobaid Adnan</strong>, Wyatt Allen Jones, and Tianli Feng</p>
             <p class="cite">Phys. Rev. B <strong>112</strong>, 235308 (2025).</p>
             <p class="highlight">Standalone GaN/AlN TBC is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction; a nearby second interface can raise it to about 1000 by ballistic filtering.</p>
+            <p class="contrib"><strong>My contribution.</strong> I built a mismatch cross-section analysis for the unstrained GaN/AlN interface, the counterpart of the treatment developed for Si/Ge, so the two systems could be compared on the same basis. The governing difficulty here is cell length: resolving the interplay length over which a second interface still changes TBC requires simulation cells long enough to reach the ballistic-to-diffusive crossover, which is where most of the computational cost sits.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1103/w7qp-tl6z" target="_blank" rel="noopener">DOI for GaN/AlN standalone paper</a>
               <a href="https://arxiv.org/abs/2503.05084" target="_blank" rel="noopener">arXiv:2503.05084</a>
@@ -248,6 +260,7 @@
             <p class="authors"><strong>Khalid Zobaid Adnan</strong>, Mahesh R. Neupane, and Tianli Feng</p>
             <p class="cite">Int. J. Heat Mass Transfer <strong>235</strong>, 126227 (2024). With U.S. Army DEVCOM Army Research Laboratory.</p>
             <p class="highlight">Quantum-corrected TBC for Al, Mo, Zr, and Au on diamond is about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup>; TBC tracks metal Debye temperature more than elastic modulus.</p>
+            <p class="contrib"><strong>My contribution.</strong> I implemented and quantified the quantum correction factor for the classical diffuse mismatch model (DMM). Classical MD and classical DMM both assume every vibrational mode is fully excited, which is wrong at room temperature for stiff materials such as diamond. Correcting for the actual mode occupation put MD, DMM, and experiment on the same footing, which is what makes the comparison across Al, Mo, Zr, and Au meaningful rather than an artifact of the classical limit.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1016/j.ijheatmasstransfer.2024.126227" target="_blank" rel="noopener">DOI for metal–diamond paper</a>
               <a href="https://arxiv.org/abs/2404.15465" target="_blank" rel="noopener">arXiv:2404.15465</a>
@@ -266,6 +279,7 @@
             <p class="authors"><strong>Khalid Zobaid Adnan</strong> and Tianli Feng</p>
             <p class="cite">Phys. Rev. B <strong>109</strong>, 245302 (2024).</p>
             <p class="highlight">A nearby interface after Si/Ge raised TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup>. A 30 nm Si layer between Ge increased apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup>.</p>
+            <p class="contrib"><strong>My contribution.</strong> The Si/Ge numbers are the result, but the lasting contribution is methodological: a way of posing, sizing, and interpreting successive-interface calculations that determines how the later GaN/AlN, Si/diamond, and GaN/diamond studies are designed. This paper defines the question the rest of the thesis answers.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">DOI for nearby-environment paper</a>
               <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">Physical Review B article</a>
@@ -273,6 +287,15 @@
           </div>
         </li>
       </ol>
+
+      <div class="coursework">
+        <h3>Conference presentations</h3>
+        <p>ASME Summer Heat Transfer Conference (SHTC), 2025.</p>
+        <ul class="talk-list">
+          <li><strong>Thermal boundary conductance of metal&ndash;diamond interfaces predicted by machine learning interatomic potentials</strong> &mdash; conference paper and presentation. Companion to <a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer <strong>235</strong>, 126227 (2024)</a>.</li>
+          <li><strong>Thermal boundary conductance and thermal conductivity strongly depend on nearby environment</strong> &mdash; poster. Companion to <a href="#pub-prb-2024">Phys. Rev. B <strong>109</strong>, 245302 (2024)</a>.</li>
+        </ul>
+      </div>
     </section>
 
     <section id="software" class="section section-alt">
@@ -326,8 +349,10 @@
             <p class="when">Fall 2023, Fall 2025, Spring 2026</p>
           </header>
           <ul>
-            <li>Numerical methods for undergraduate engineering modeling (about 60 students)</li>
-            <li>Office hours and exam grading</li>
+            <li>ME EN 2450 &mdash; Numerical Methods (lab sections)</li>
+            <li>ME EN 2455 &mdash; Programming for Modeling and Simulation</li>
+            <li>ME EN 2300 &mdash; Thermodynamics</li>
+            <li>About 60 students per term; led in-person homework walkthroughs and weekly office hours, and graded term projects and final exams</li>
           </ul>
         </article>
         <article class="post">
@@ -377,6 +402,7 @@
         <article class="soft">
           <h3>Research collaborations</h3>
           <p>Published metal/diamond TBC work was done with U.S. Army DEVCOM Army Research Laboratory (<a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer 235, 126227</a>). That collaboration can continue on metal&ndash;diamond heat spreading. Current work with Sandia National Laboratories is GaN/diamond thermal boundary conductance (computational; not yet listed as a paper here). I also welcome theory&ndash;experiment comparisons on GaN/AlN and Si/diamond, and reuse of DFT-trained interface potentials in device-scale models. I do not run time-domain thermoreflectance in-house. Email <a href="mailto:khalid.adnan@utah.edu">khalid.adnan@utah.edu</a> with the stack, temperature range, and what you want compared.</p>
+          <p>This work is supported by NSF CAREER award CBET-2337749, &ldquo;Prediction and understanding of thermal transport across successive interfaces&rdquo; (PI: Tianli Feng, 2024&ndash;2029), whose scope is the same successive-interface question this thesis addresses. Computing time comes from CHPC at the University of Utah and Bridges-2 at the Pittsburgh Supercomputing Center through NSF ACCESS.</p>
         </article>
         <article class="soft">
           <h3>For students</h3>
@@ -399,6 +425,7 @@
               <a href="mailto:khalidzobaidme167@gmail.com">khalidzobaidme167@gmail.com</a>
             </span>
           </li>
+          <li><span>CV</span> <a href="assets/CV_Khalid_Zobaid_Adnan.pdf">Curriculum vitae (PDF)</a></li>
           <li><span>Scholar</span> <a href="https://scholar.google.com/citations?user=MXLTLekAAAAJ" target="_blank" rel="noopener">Google Scholar profile</a></li>
           <li><span>ORCID</span> <a href="https://orcid.org/0009-0003-0672-8641" target="_blank" rel="noopener">0009-0003-0672-8641</a></li>
           <li><span>GitHub</span> <a href="https://github.com/kzadnan" target="_blank" rel="noopener">github.com/kzadnan</a></li>
