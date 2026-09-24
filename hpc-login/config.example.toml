@@ -1,0 +1,45 @@
+# Copy this file to one of these locations and edit it. Both are gitignored
+# when you keep the copy next to this example:
+#
+#   hpc-login/config.toml
+#   ~/.config/hpc-login/config.toml
+#
+# You can also set the HPC_LOGIN_* environment variables. Those override this
+# file. Do not put passwords or private-key contents here. identity_file is
+# only a path; OpenSSH reads the key itself. OpenSSH also reads ~/.ssh/config,
+# so a Host alias can supply User, Port, IdentityFile, and ProxyJump for you.
+
+# SSH destination. Use a Host alias from ~/.ssh/config, or a DNS name.
+host = "hpc.example.edu"
+user = "your-username"
+
+# Uncomment to force a port. Leave it unset to let ~/.ssh/config choose.
+# port = 22
+
+# Uncomment to force one private key. Leave it unset to use ssh-agent and
+# the IdentityFile already listed in ~/.ssh/config.
+# identity_file = "~/.ssh/id_ed25519"
+
+# Optional jump host, passed to OpenSSH as ProxyJump. One hop, or a
+# comma-separated chain (user@bastion:22,second-hop).
+# proxy_jump = "jump.example.edu"
+
+# Client keepalives. OpenSSH sends a probe every server_alive_interval
+# seconds and closes the session after server_alive_count_max missed replies.
+server_alive_interval = 30
+server_alive_count_max = 3
+
+# Seconds to wait for the TCP handshake and authentication.
+connect_timeout = 20
+
+# Status page. This value is required to be 127.0.0.1.
+http_host = "127.0.0.1"
+http_port = 8765
+
+# Guardrails for MCP run_command / file transfer.
+command_timeout = 120
+output_limit_bytes = 200000
+transfer_limit_bytes = 50000000
+
+# Control socket, pid lock, and status file. Kept outside the repository.
+# state_dir = "~/.local/state/hpc-login"

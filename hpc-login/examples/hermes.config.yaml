@@ -1,0 +1,6 @@
+mcp_servers:
+  hpc-login:
+    command: "/ABSOLUTE/PATH/TO/hpc-login/bin/hpc-login"
+    args: ["mcp"]
+    timeout: 180
+    connect_timeout: 30

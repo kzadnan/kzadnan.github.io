@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hpc-login": {
+      "command": "${CLAUDE_PROJECT_DIR:-.}/hpc-login/bin/hpc-login",
+      "args": ["mcp"]
+    }
+  }
+}

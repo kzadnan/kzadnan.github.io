@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hpc-login": {
+      "command": "/ABSOLUTE/PATH/TO/hpc-login/bin/hpc-login",
+      "args": ["mcp"]
+    }
+  }
+}
