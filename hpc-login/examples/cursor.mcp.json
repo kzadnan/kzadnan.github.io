@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "hpc-login": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/hpc-login/bin/hpc-login",
+      "args": ["mcp"]
+    }
+  }
+}

@@ -1,3 +1,12 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# hpc-login local config, control sockets, and environments
+hpc-login/config.toml
+hpc-login/.venv/
+hpc-login/state/
+hpc-login/**/__pycache__/
+hpc-login/**/*.pyc
+hpc-login/**/*.sock
+node_modules/

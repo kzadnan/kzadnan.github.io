@@ -1,0 +1,16 @@
+[project]
+name = "hpc-login"
+version = "0.1.0"
+description = "Keep a local OpenSSH session to an HPC login node alive and expose it over MCP."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.scripts]
+hpc-login = "hpc_login.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["hpc_login*"]
