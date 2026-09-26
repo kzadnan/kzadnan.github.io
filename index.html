@@ -205,8 +205,9 @@
             <summary>More</summary>
             <div class="pub-panel">
               <p class="pub-panel-label">Abstract</p>
-              <p class="highlight">AlGaN between GaN and AlN reduces TBC over the full alloy range; a sigmoidal composition grade recovers conductance relative to abrupt or linear profiles.</p>
-              <p class="contrib"><strong>My contribution.</strong> Compositional disorder in AlGaN makes the potential-energy surface far more complex than a binary interface, since every alloy composition is effectively a different material. Instead of trying to cover the whole alloy space, I trained the potential only on the structures relevant to the compositions and interface geometries actually simulated, which kept the fit accurate at tractable cost, then ran the NEMD showing that alloy scattering outweighs the usual phonon-bridge benefit.</p>
+              <p class="pub-abstract">AlN/GaN stacks in RF and power devices often contain an AlGaN interlayer, either from growth or to form a 2DEG. Using deep-learning potentials trained on DFT, we show that this interlayer <em>reduces</em> GaN/AlN thermal boundary conductance over the full alloy range &mdash; alloy scattering outweighs the usual phonon-bridge picture. A sigmoidal Al-composition grade recovers conductance relative to abrupt or linear profiles, giving a concrete electro-thermal design rule for III-nitride stacks.</p>
+              <p class="pub-panel-label">Key message</p>
+              <p class="pub-key-message">An AlGaN interlayer is not always a phonon bridge: alloy disorder can lower GaN/AlN TBC, but a graded composition profile can recover it.</p>
               <p class="pub-view-links">
                 <a href="https://doi.org/10.1063/5.0323350" target="_blank" rel="noopener">View details for DOI 10.1063/5.0323350</a>
                 <a href="https://arxiv.org/abs/2601.12151" target="_blank" rel="noopener">View details for arXiv:2601.12151</a>
@@ -227,8 +228,9 @@
             <summary>More</summary>
             <div class="pub-panel">
               <p class="pub-panel-label">Abstract</p>
-              <p class="highlight">After quantum correction, bare Si/diamond TBC is 130 MW m<sup>−2</sup> K<sup>−1</sup>; 1 nm SiN<sub>x</sub> gives 275, amorphous carbon 350.</p>
-              <p class="contrib"><strong>My contribution.</strong> Si and diamond are badly lattice-mismatched, and the usual expectation is that the resulting interfacial strain destroys any clean phonon description. I showed that it does not: the junction carries high strain, yet mode-resolved transport stays interpretable, so interlayer choice can still be reasoned about in phonon terms instead of being treated as a disordered black box. I also built the finite-element silicon-on-diamond device model that converts these TBC values into hot-spot temperature.</p>
+              <p class="pub-abstract">MLIP-driven nonequilibrium molecular dynamics, after quantum correction, gives a bare Si/diamond thermal boundary conductance of 130 MW m<sup>−2</sup> K<sup>−1</sup> &mdash; matching experiment (~140) and well below Tersoff MD or a first-principles diffuse mismatch estimate. A 1 nm SiN<sub>x</sub> interlayer approximately doubles TBC to 275; amorphous carbon raises it to 350 by bridging intermediate phonon modes. Device-level finite-element modeling shows a measurable reduction in peak chip temperature when these interlayers are included.</p>
+              <p class="pub-panel-label">Key message</p>
+              <p class="pub-key-message">Nanometer SiN<sub>x</sub> or amorphous-carbon interlayers can strongly boost Si/diamond TBC; DFT-trained MLIPs are needed to match experiment at the bare interface.</p>
               <p class="pub-view-links">
                 <a href="https://doi.org/10.1103/84jf-svtg" target="_blank" rel="noopener">View details for DOI 10.1103/84jf-svtg</a>
                 <a href="https://journals.aps.org/prapplied/abstract/10.1103/84jf-svtg" target="_blank" rel="noopener">View details for journal page</a>
@@ -248,8 +250,9 @@
             <summary>More</summary>
             <div class="pub-panel">
               <p class="pub-panel-label">Abstract</p>
-              <p class="highlight">Standalone GaN/AlN TBC is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction; a nearby second interface can raise it to about 1000 by ballistic filtering.</p>
-              <p class="contrib"><strong>My contribution.</strong> I built a mismatch cross-section analysis for the unstrained GaN/AlN interface, the counterpart of the treatment developed for Si/Ge, so the two systems could be compared on the same basis. The governing difficulty here is cell length: resolving the interplay length over which a second interface still changes TBC requires simulation cells long enough to reach the ballistic-to-diffusive crossover, which is where most of the computational cost sits.</p>
+              <p class="pub-abstract">Standalone GaN/AlN thermal boundary conductance is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction, revising the wide spread from empirical potentials. Bringing a second interface nearby raises the original TBC to about 1000, and additional neighbors push it above 1150. The enhancement comes from ballistic filtering of existing bulk phonon modes, not superlattice minibands. We define a critical separation distance set by the mean free path of the filtered modes.</p>
+              <p class="pub-panel-label">Key message</p>
+              <p class="pub-key-message">GaN/AlN TBC is not a single-interface constant: a nearby junction can raise conductance by filtering which phonons reach the original interface.</p>
               <p class="pub-view-links">
                 <a href="https://doi.org/10.1103/w7qp-tl6z" target="_blank" rel="noopener">View details for DOI 10.1103/w7qp-tl6z</a>
                 <a href="https://arxiv.org/abs/2503.05084" target="_blank" rel="noopener">View details for arXiv:2503.05084</a>
@@ -270,8 +273,9 @@
             <summary>More</summary>
             <div class="pub-panel">
               <p class="pub-panel-label">Abstract</p>
-              <p class="highlight">Quantum-corrected TBC for Al, Mo, Zr, and Au on diamond is about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup>; TBC tracks metal Debye temperature more than elastic modulus.</p>
-              <p class="contrib"><strong>My contribution.</strong> I implemented and quantified the quantum correction factor for the classical diffuse mismatch model (DMM). Classical MD and classical DMM both assume every vibrational mode is fully excited, which is wrong at room temperature for stiff materials such as diamond. Correcting for the actual mode occupation put MD, DMM, and experiment on the same footing, which is what makes the comparison across Al, Mo, Zr, and Au meaningful rather than an artifact of the classical limit.</p>
+              <p class="pub-abstract">We built machine-learning interatomic potentials for Al, Mo, Zr, and Au on diamond and predicted quantum-corrected thermal boundary conductances of about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup>. Those resistances correspond to equivalent thermal thicknesses on the order of microns for some metals. Acoustic and diffuse mismatch models miss interfacial structure and inelastic transmission even with full-band DFT phonons. TBC correlates with the metal phonon specific heat and Debye temperature more closely than with elastic modulus.</p>
+              <p class="pub-panel-label">Key message</p>
+              <p class="pub-key-message">For metal&ndash;diamond contacts, pick the metal by its vibrational density of states (Debye scale), not stiffness alone &mdash; and apply quantum corrections before comparing to experiment.</p>
               <p class="pub-view-links">
                 <a href="https://doi.org/10.1016/j.ijheatmasstransfer.2024.126227" target="_blank" rel="noopener">View details for DOI 10.1016/j.ijheatmasstransfer.2024.126227</a>
                 <a href="https://arxiv.org/abs/2404.15465" target="_blank" rel="noopener">View details for arXiv:2404.15465</a>
@@ -292,8 +296,9 @@
             <summary>More</summary>
             <div class="pub-panel">
               <p class="pub-panel-label">Abstract</p>
-              <p class="highlight">A nearby interface after Si/Ge raised TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup>. A 30 nm Si layer between Ge increased apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup>.</p>
-              <p class="contrib"><strong>My contribution.</strong> The Si/Ge numbers are the result, but the lasting contribution is methodological: a way of posing, sizing, and interpreting successive-interface calculations that determines how the later GaN/AlN, Si/diamond, and GaN/diamond studies are designed. This paper defines the question the rest of the thesis answers.</p>
+              <p class="pub-abstract">Thermal boundary conductance is often treated as a property of a single interface. Here, adding a nearby interface after Si/Ge raises TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup> because the second junction filters phonon modes. Sandwiching 30 nm of Si between Ge slabs raises its apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup> &mdash; above bulk Si &mdash; by admitting low-frequency heat-carrying modes and rejecting optical ones. The effect vanishes when interface spacing exceeds the relevant mean free paths.</p>
+              <p class="pub-panel-label">Key message</p>
+              <p class="pub-key-message">TBC and even a thin film&rsquo;s apparent &kappa; depend on what sits next door; successive interfaces act as phonon filters until separation exceeds a mean-free-path scale.</p>
               <p class="pub-view-links">
                 <a href="https://doi.org/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">View details for DOI 10.1103/PhysRevB.109.245302</a>
                 <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.109.245302" target="_blank" rel="noopener">View details for journal page</a>

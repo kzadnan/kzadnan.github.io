@@ -598,7 +598,27 @@ h4 {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--ink-soft);
+}
+
+.pub-panel-label:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.pub-abstract {
+  margin: 0;
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+}
+
+.pub-key-message {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  background: rgba(44, 110, 122, 0.08);
+  border-left: 3px solid var(--cool);
+  font-size: 0.95rem;
+  color: var(--ink);
 }
 
 .pub-view-links {
