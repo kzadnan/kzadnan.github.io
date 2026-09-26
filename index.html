@@ -71,46 +71,81 @@
 
   <main id="main">
     <section id="top" class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">University of Utah &middot; Mechanical Engineering</p>
-        <h1>Khalid Zobaid Adnan</h1>
-        <p class="claim">Thermal boundary conductance depends on the nearby environment, not only the interface.</p>
-        <p class="lede">Ph.D. candidate in the <a href="https://feng.mech.utah.edu/" target="_blank" rel="noopener">Feng research group</a>. Computational phonon transport in GaN/AlN, Si/Ge, Si/diamond, and metal/diamond heterostructures &mdash; nonequilibrium molecular dynamics driven by machine-learning potentials trained on density-functional theory.</p>
-        <p class="thesis">Proposed thesis: interfacial thermal transport and the interplay between successive interfaces in solid&ndash;solid heterostructures.</p>
-        <div class="hero-links">
-          <a class="btn btn-primary" href="#publications">Read papers</a>
-          <a class="btn" href="#research">Research themes</a>
-          <a class="btn" href="assets/CV_Khalid_Zobaid_Adnan.pdf">Curriculum vitae (PDF)</a>
-          <a class="btn" href="mailto:khalid.adnan@utah.edu">Email</a>
+      <div class="hero-main">
+        <div class="hero-copy">
+          <p class="eyebrow">University of Utah &middot; Mechanical Engineering</p>
+          <h1>Khalid Zobaid Adnan</h1>
+          <p class="claim">Thermal boundary conductance depends on the nearby environment, not only the interface.</p>
+          <p class="lede">Ph.D. candidate in the <a href="https://feng.mech.utah.edu/" target="_blank" rel="noopener">Feng research group</a>. Computational phonon transport in GaN/AlN, Si/Ge, Si/diamond, and metal/diamond heterostructures &mdash; nonequilibrium molecular dynamics driven by machine-learning potentials trained on density-functional theory.</p>
+          <p class="thesis">Proposed thesis: interfacial thermal transport and the interplay between successive interfaces in solid&ndash;solid heterostructures.</p>
+          <div class="hero-links">
+            <a class="btn btn-primary" href="#publications">Read papers</a>
+            <a class="btn" href="#research">Research themes</a>
+            <a class="btn" href="assets/CV_Khalid_Zobaid_Adnan.pdf">Curriculum vitae (PDF)</a>
+            <a class="btn" href="mailto:khalid.adnan@utah.edu">Email</a>
+          </div>
         </div>
+        <figure class="hero-photo">
+          <img src="assets/profile.jpg" alt="Portrait of Khalid Zobaid Adnan" width="460" height="460">
+        </figure>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/profile.jpg" alt="Portrait of Khalid Zobaid Adnan" width="460" height="460">
-      </figure>
-    </section>
 
-    <figure class="schematic" id="interplay-figure" aria-labelledby="schematic-caption">
-      <svg viewBox="0 0 720 220" role="img" aria-label="Schematic of two material slabs with a temperature drop at the interface and a second interface that filters phonon modes.">
-        <rect x="20" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#d3542f" stroke-width="1.5"/>
-        <rect x="260" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#2c6e7a" stroke-width="1.5"/>
-        <rect x="500" y="36" width="200" height="140" rx="8" fill="#1a1f2b" stroke="#c4a35a" stroke-width="1.5"/>
-        <line x1="240" y1="28" x2="240" y2="184" stroke="#c4a35a" stroke-width="2" stroke-dasharray="4 5"/>
-        <line x1="480" y1="28" x2="480" y2="184" stroke="#c4a35a" stroke-width="2" stroke-dasharray="4 5"/>
-        <text x="120" y="28" text-anchor="middle" fill="#d3542f" font-size="13" font-family="Source Sans 3, sans-serif">Hot reservoir</text>
-        <text x="360" y="28" text-anchor="middle" fill="#7eb8c0" font-size="13" font-family="Source Sans 3, sans-serif">Middle layer</text>
-        <text x="600" y="28" text-anchor="middle" fill="#c4a35a" font-size="13" font-family="Source Sans 3, sans-serif">Cold reservoir</text>
-        <path d="M36 110 C70 90, 100 130, 140 100 S190 88, 228 102" fill="none" stroke="#d3542f" stroke-width="1.5" opacity="0.85"/>
-        <path d="M36 130 C72 118, 108 148, 148 122 S192 110, 228 122" fill="none" stroke="#d3542f" stroke-width="1.1" opacity="0.45"/>
-        <path d="M272 108 C310 92, 340 128, 380 104 S430 90, 468 100" fill="none" stroke="#7eb8c0" stroke-width="1.5" opacity="0.85"/>
-        <path d="M512 118 C548 108, 580 138, 620 112 S660 102, 684 110" fill="none" stroke="#c4a35a" stroke-width="1.4" opacity="0.7"/>
-        <polyline points="40,62 228,78 252,118 468,130 492,158 680,170" fill="none" stroke="#f7f9fc" stroke-width="2.2"/>
-        <circle cx="228" cy="78" r="3.5" fill="#d3542f"/>
-        <circle cx="252" cy="118" r="3.5" fill="#7eb8c0"/>
-        <circle cx="468" cy="130" r="3.5" fill="#c4a35a"/>
-        <text x="360" y="208" text-anchor="middle" fill="#3a3f4b" font-size="13" font-family="Source Sans 3, sans-serif">Interface 1 (ΔT → TBC) · phonon filter · Interface 2</text>
-      </svg>
-      <figcaption id="schematic-caption">Nonequilibrium molecular dynamics picture of stacked interfaces. A temperature drop at a junction defines thermal boundary conductance (TBC). A second interface a finite distance away can filter which phonon modes arrive, so TBC is not a property of a single contact alone. The effect weakens once the spacer is longer than the relevant phonon mean free path (ballistic-to-diffusive crossover).</figcaption>
-    </figure>
+      <div class="hero-schematics" id="hero-schematics" aria-label="Schematics from published work">
+        <figure class="paper-mini">
+          <a href="#pub-prb-2024">
+            <svg viewBox="0 0 320 120" role="img" aria-label="Ge–Si–Ge stack with two interfaces">
+              <text x="8" y="16" font-size="11" font-weight="700" fill="#3a3f4b">(a) Successive interfaces</text>
+              <rect x="24" y="36" width="72" height="56" fill="#e8dcc8" stroke="#9e3418"/>
+              <rect x="96" y="44" width="48" height="40" fill="#c5d4e8" stroke="#2c6e7a"/>
+              <rect x="144" y="36" width="72" height="56" fill="#e8dcc8" stroke="#9e3418"/>
+              <line x1="96" y1="28" x2="96" y2="100" stroke="#12151c" stroke-dasharray="3 3"/>
+              <line x1="144" y1="28" x2="144" y2="100" stroke="#12151c" stroke-dasharray="3 3"/>
+              <path d="M8 64 L20 64" stroke="#d3542f" stroke-width="2"/><polygon points="20,64 14,61 14,67" fill="#d3542f"/>
+              <text x="168" y="112" font-size="10" fill="#3a3f4b">TBC 400 → 700 MW/m²K</text>
+            </svg>
+            <figcaption>Phys. Rev. B <strong>109</strong>, 245302 (2024)</figcaption>
+          </a>
+        </figure>
+
+        <figure class="paper-mini">
+          <a href="#pub-pra-2026">
+            <svg viewBox="0 0 320 120" role="img" aria-label="Si interlayer on diamond">
+              <text x="8" y="16" font-size="11" font-weight="700" fill="#3a3f4b">(b) Interlayer bridge</text>
+              <rect x="32" y="40" width="88" height="48" fill="#c5d4e8" stroke="#2c6e7a"/>
+              <rect x="120" y="52" width="16" height="24" fill="#c4a35a" stroke="#9e3418"/>
+              <rect x="136" y="40" width="88" height="48" fill="#eef2f6" stroke="#12151c"/>
+              <text x="52" y="68" font-size="10" fill="#2c6e7a">Si</text>
+              <text x="124" y="68" font-size="8" fill="#9e3418">1 nm</text>
+              <text x="158" y="68" font-size="10" fill="#3a3f4b">diamond</text>
+              <text x="32" y="112" font-size="10" fill="#3a3f4b">TBC 130 → 350 MW/m²K</text>
+            </svg>
+            <figcaption>Phys. Rev. Applied <strong>25</strong>, 044013 (2026)</figcaption>
+          </a>
+        </figure>
+
+        <figure class="paper-mini">
+          <a href="#pub-apl-2026">
+            <svg viewBox="0 0 320 120" role="img" aria-label="Graded AlGaN at GaN/AlN">
+              <text x="8" y="16" font-size="11" font-weight="700" fill="#3a3f4b">(c) Composition grade</text>
+              <rect x="28" y="42" width="70" height="44" fill="#7eb8c0" stroke="#2c6e7a"/>
+              <rect x="98" y="42" width="56" height="44" fill="url(#alganGrade)" stroke="#2c6e7a"/>
+              <rect x="154" y="42" width="70" height="44" fill="#b8c4e8" stroke="#1a237e"/>
+              <defs>
+                <linearGradient id="alganGrade" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#7eb8c0"/>
+                  <stop offset="100%" stop-color="#b8c4e8"/>
+                </linearGradient>
+              </defs>
+              <text x="38" y="68" font-size="9" fill="#12151c">GaN</text>
+              <text x="108" y="68" font-size="8" fill="#12151c">AlGaN</text>
+              <text x="168" y="68" font-size="9" fill="#12151c">AlN</text>
+              <text x="28" y="112" font-size="10" fill="#3a3f4b">Sigmoidal grade recovers TBC</text>
+            </svg>
+            <figcaption>Appl. Phys. Lett. <strong>128</strong>, 122201 (2026)</figcaption>
+          </a>
+        </figure>
+      </div>
+    </section>
 
     <section id="about" class="section">
       <div class="section-head">
@@ -162,7 +197,7 @@
           <h3>Successive interfaces</h3>
           <p>TBC of one junction depends on what sits next door until the gap exceeds a phonon mean-free-path scale. In Si/Ge NEMD, adding a nearby interface raised TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup>. A 30 nm Si film between Ge slabs increased apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup> by admitting low-frequency heat-carrying modes. In GaN/AlN, a standalone interface is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction; a second nearby interface can raise that to about 1000 MW m<sup>−2</sup> K<sup>−1</sup> by ballistic filtering of existing bulk modes, not superlattice minibands.</p>
           <p class="contrib"><strong>My contribution.</strong> First-author demonstration of the effect in Si/Ge, and the methodological framing the group&rsquo;s later successive-interface work builds on: how to set up, size, and interpret multi-interface NEMD cells so that genuine interface&ndash;interface interplay is separable from finite-size artifacts. That framework sets the agenda for the rest of the thesis.</p>
-          <p class="theme-links"><a href="#interplay-figure">Interplay schematic</a> · <a href="#pub-prb-2024">Phys. Rev. B 109, 245302 (2024)</a> · <a href="#pub-prb-2025">Phys. Rev. B 112, 235308 (2025)</a></p>
+          <p class="theme-links"><a href="#hero-schematics">Paper schematics</a> · <a href="#pub-prb-2024">Phys. Rev. B 109, 245302 (2024)</a> · <a href="#pub-prb-2025">Phys. Rev. B 112, 235308 (2025)</a></p>
         </article>
 
         <article class="theme">
