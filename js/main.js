@@ -1,11 +1,20 @@
 const nav = document.getElementById("site-nav");
 const toggle = document.querySelector(".nav-toggle");
+const header = document.querySelector(".site-header");
 const year = document.getElementById("year");
 const filters = document.querySelectorAll(".filter");
 const pubs = document.querySelectorAll(".pub");
 
 if (year) {
   year.textContent = String(new Date().getFullYear());
+}
+
+if (header) {
+  const onScroll = () => {
+    header.classList.toggle("is-stuck", window.scrollY > 8);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
 }
 
 if (toggle && nav) {

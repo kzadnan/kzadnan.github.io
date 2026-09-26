@@ -80,10 +80,15 @@ h4 {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   backdrop-filter: blur(14px);
-  background: rgba(247, 249, 252, 0.9);
+  background: rgba(247, 249, 252, 0.94);
   border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 0 rgba(18, 21, 28, 0.04);
+}
+
+.site-header.is-stuck {
+  box-shadow: 0 6px 24px rgba(18, 21, 28, 0.1);
 }
 
 .header-inner,
@@ -483,7 +488,7 @@ h4 {
   padding: 0;
   margin: 2rem 0 0;
   display: grid;
-  gap: 1.2rem;
+  gap: 0;
 }
 
 .interest-num {
@@ -510,8 +515,120 @@ h4 {
   background: var(--card);
   border: 1px solid var(--line);
   border-left: 4px solid var(--gold);
-  border-radius: 14px;
-  padding: 1.3rem 1.4rem 1.15rem;
+  border-radius: 0;
+  padding: 1.1rem 1.2rem 0.85rem;
+}
+
+.pub:first-child {
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.pub:last-child {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.pub + .pub {
+  border-top: none;
+}
+
+.pub-line {
+  margin: 0;
+  line-height: 1.55;
+  font-size: 1rem;
+}
+
+.pub-line-title {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.pub-line-journal {
+  font-weight: 700;
+  color: var(--cool);
+  margin-left: 0.35rem;
+}
+
+.pub-line-authors,
+.pub-line-biblio {
+  color: var(--ink-soft);
+  margin-left: 0.35rem;
+}
+
+.pub-expand {
+  margin-top: 0.45rem;
+}
+
+.pub-expand summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--heat-deep);
+  user-select: none;
+}
+
+.pub-expand summary::-webkit-details-marker {
+  display: none;
+}
+
+.pub-expand summary::before {
+  content: "+ ";
+  font-weight: 700;
+}
+
+.pub-expand[open] summary::before {
+  content: "− ";
+}
+
+.pub-expand summary:hover {
+  color: var(--heat);
+}
+
+.pub-panel {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--line);
+}
+
+.pub-panel-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+}
+
+.pub-view-links {
+  margin: 0.85rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.pub-view-links a {
+  text-decoration: none;
+}
+
+.pub-view-links a:hover {
+  text-decoration: underline;
+}
+
+.badge-inline {
+  display: inline-block;
+  margin-left: 0.45rem;
+  vertical-align: middle;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(211, 84, 47, 0.12);
+  color: var(--heat-deep);
 }
 
 .pub-meta {
