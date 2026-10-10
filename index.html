@@ -76,8 +76,8 @@
           <p class="eyebrow">University of Utah &middot; Mechanical Engineering</p>
           <h1>Khalid Zobaid Adnan</h1>
           <p class="claim">Thermal boundary conductance depends on the nearby environment, not only the interface.</p>
-          <p class="lede">Ph.D. candidate in the <a href="https://feng.mech.utah.edu/" target="_blank" rel="noopener">Feng research group</a>. Computational phonon transport in GaN/AlN, Si/Ge, Si/diamond, and metal/diamond heterostructures &mdash; nonequilibrium molecular dynamics driven by machine-learning potentials trained on density-functional theory.</p>
-          <p class="thesis">Proposed thesis: interfacial thermal transport and the interplay between successive interfaces in solid&ndash;solid heterostructures.</p>
+          <p class="lede">I am a Ph.D. candidate in the <a href="https://feng.mech.utah.edu/" target="_blank" rel="noopener">Feng research group</a>, working on one question: when heat crosses a solid&ndash;solid interface, how much of the resistance is that junction, and how much is the stack around it? I answer it with machine-learning potentials trained on density-functional theory, then nonequilibrium molecular dynamics in GaN/AlN, Si/Ge, Si/diamond, and metal/diamond.</p>
+          <p class="thesis">Thesis: interfacial thermal transport and the interplay between successive interfaces in solid&ndash;solid heterostructures. Expected summer 2027.</p>
           <div class="hero-links">
             <a class="btn btn-primary" href="#publications">Read papers</a>
             <a class="btn" href="#research">Research themes</a>
@@ -154,10 +154,9 @@
       </div>
       <div class="about-grid">
         <div class="prose">
-          <p>Heat in wide- and ultrawide-bandgap electronics often stalls at material junctions, not in the bulk crystals. Thermal boundary conductance (TBC) is the interfacial heat current per unit area per unit temperature drop. Most compact models treat TBC as an intrinsic property of one interface.</p>
-          <p>I test that assumption with computation: density-functional theory (DFT) labels forces, machine-learning interatomic potentials (MLIPs) carry those forces into large cells, and nonequilibrium molecular dynamics (NEMD) extracts TBC. The work is computational, not a thermal-measurement lab. Reported TBC values below follow the quantum-corrected NEMD numbers in the cited papers unless noted.</p>
-          <p>The practical target is stacks that appear in high-power RF and power devices: GaN/AlN, Si/diamond, metal/diamond, and GaN/diamond.</p>
-          <p>These interface numbers change device outcomes. In the Si/diamond study I coupled the atomistic TBC results to a finite-element silicon-on-diamond device model. Raising Si/diamond TBC from 50 to 350 MW m<sup>−2</sup> K<sup>−1</sup> lowers the hot-spot temperature rise from about 135 K to about 105 K for a 1 &micro;m Si layer on 50 &micro;m diamond. Once the Si layer drops below roughly 0.7 &micro;m and spreading resistance dominates, the same TBC increase cuts the peak rise from about 165 K to about 95 K. Because roughly 10 K of junction-temperature reduction can extend device lifetime by about 50%, interfacial engineering is a reliability lever for power and RF electronics rather than a second-order correction.</p>
+          <p>Device models still look up thermal boundary conductance as if it belonged to a pair of materials. I do not think that number exists on its own. A second interface a few nanometers away can decide which phonons ever arrive. A nanometer of interlayer can bridge two mismatched spectra, or scatter them. An empirical potential can get the bonding wrong enough to miss experiment by a factor of two.</p>
+          <p>The work I like is the part between those statements and a number I trust. Build the interface. Label the forces with density-functional theory. Train a potential that is honest at the junction, not only in the bulk. Run nonequilibrium molecular dynamics long enough to see the ballistic-to-diffusive crossover, so a finite-size artifact is not mistaken for physics. The stacks are the ones that limit high-power RF and power electronics: GaN/AlN, Si/diamond, metal/diamond, and GaN/diamond.</p>
+          <p>The numbers change devices, not only papers. In the silicon-on-diamond model from the Si/diamond study, raising interfacial conductance from 50 to 350&nbsp;MW&nbsp;m<sup>&minus;2</sup>&nbsp;K<sup>&minus;1</sup> drops the hot-spot temperature rise from about 135&nbsp;K to about 105&nbsp;K for a 1&nbsp;&micro;m Si layer on 50&nbsp;&micro;m diamond. Below about 0.7&nbsp;&micro;m of Si, where spreading resistance dominates, the same change cuts the peak rise from about 165&nbsp;K to about 95&nbsp;K. Roughly 10&nbsp;K of junction-temperature reduction can extend device lifetime by about half. That is why I treat interfacial design as a reliability decision.</p>
         </div>
         <aside class="facts">
           <dl>
@@ -175,8 +174,8 @@
             <dd>U.S. Army DEVCOM (metal/diamond); Sandia National Laboratories (GaN/diamond, in progress)</dd>
             <dt>Funding</dt>
             <dd>NSF CAREER award CBET-2337749, &ldquo;Prediction and understanding of thermal transport across successive interfaces&rdquo; (PI: Tianli Feng, 2024&ndash;2029). Computing through CHPC at the University of Utah and Bridges-2 at the Pittsburgh Supercomputing Center via NSF ACCESS.</dd>
-            <dt>Expected graduation</dt>
-            <dd>Summer 2027. Seeking postdoctoral or research-scientist positions in computational thermal transport, and open to tenure-track applications.</dd>
+            <dt>Next</dt>
+            <dd>Ph.D. expected summer 2027. Looking for a postdoctoral or research-scientist role in computational thermal transport.</dd>
             <dt>CV</dt>
             <dd><a href="assets/CV_Khalid_Zobaid_Adnan.pdf">Download CV (PDF)</a></dd>
           </dl>
@@ -188,29 +187,29 @@
       <div class="section-head">
         <p class="kicker">Research</p>
         <h2>Three themes</h2>
-        <p class="section-lead">One thesis, three questions: how a neighboring interface changes TBC, when an interlayer helps or hurts, and when a DFT-trained potential is required to get TBC right.</p>
+        <p class="section-lead">Three questions I want answered before I finish: when a neighboring interface changes the conductance, when an interlayer helps or hurts, and when only a DFT-trained potential gets the number right.</p>
       </div>
 
       <div class="theme-grid">
         <article class="theme">
           <span class="interest-num">01</span>
           <h3>Successive interfaces</h3>
-          <p>TBC of one junction depends on what sits next door until the gap exceeds a phonon mean-free-path scale. In Si/Ge NEMD, adding a nearby interface raised TBC from 400 to 700 MW m<sup>−2</sup> K<sup>−1</sup>. A 30 nm Si film between Ge slabs increased apparent thermal conductivity from 50 to 280 W m<sup>−1</sup> K<sup>−1</sup> by admitting low-frequency heat-carrying modes. In GaN/AlN, a standalone interface is about 600 MW m<sup>−2</sup> K<sup>−1</sup> at 300 K after quantum correction; a second nearby interface can raise that to about 1000 MW m<sup>−2</sup> K<sup>−1</sup> by ballistic filtering of existing bulk modes, not superlattice minibands.</p>
-          <p class="contrib"><strong>My contribution.</strong> First-author demonstration of the effect in Si/Ge, and the methodological framing the group&rsquo;s later successive-interface work builds on: how to set up, size, and interpret multi-interface NEMD cells so that genuine interface&ndash;interface interplay is separable from finite-size artifacts. That framework sets the agenda for the rest of the thesis.</p>
+          <p>I started with Si/Ge because the phonon physics is clean enough to trust. Adding a nearby interface raised thermal boundary conductance from 400 to 700&nbsp;MW&nbsp;m<sup>&minus;2</sup>&nbsp;K<sup>&minus;1</sup>. A 30&nbsp;nm Si film between Ge increased its apparent conductivity from 50 to 280&nbsp;W&nbsp;m<sup>&minus;1</sup>&nbsp;K<sup>&minus;1</sup>, above bulk, because the neighbors let low-frequency heat-carrying modes through and kept optical modes out. In GaN/AlN the same pattern appears: about 600&nbsp;MW&nbsp;m<sup>&minus;2</sup>&nbsp;K<sup>&minus;1</sup> for a standalone interface at 300&nbsp;K after quantum correction, and about 1000 when a second interface sits nearby. That enhancement is ballistic filtering of bulk modes, not superlattice minibands.</p>
+          <p>The part I care about getting right is the length of the cell. Too short, and the &ldquo;interplay&rdquo; is a finite-size artifact. I size the spacer against the mean free path of the modes the second interface actually filters, then ask whether the effect survives into the diffusive limit. Later GaN and diamond papers use that test.</p>
           <p class="theme-links"><a href="#hero-schematics">Paper schematics</a> · <a href="#pub-prb-2024">Phys. Rev. B 109, 245302 (2024)</a> · <a href="#pub-prb-2025">Phys. Rev. B 112, 235308 (2025)</a></p>
         </article>
 
         <article class="theme">
           <span class="interest-num">02</span>
           <h3>Interlayers and alloys</h3>
-          <p>A nanometer film can bridge mismatched vibrations or add scattering. For Si/diamond, quantum-corrected NEMD with an MLIP gives a bare TBC of 130 MW m<sup>−2</sup> K<sup>−1</sup> (near experiment ~140), versus 310 from Tersoff MD. A 1 nm SiN<sub>x</sub> interlayer raises TBC to 275; amorphous carbon to 350, by supplying intermediate phonon modes. For GaN/AlN, an Al<sub>1−x</sub>Ga<sub>x</sub>N interlayer <em>reduces</em> TBC over the alloy range &mdash; alloy scattering outweighs the usual phonon-bridge picture. A sigmoidal Al-composition grade recovers conductance relative to an abrupt or linear profile.</p>
+          <p>I want to know, before anyone grows the film, whether a nanometer of something in between will help. At Si/diamond, a potential trained on DFT gives a bare conductance of 130&nbsp;MW&nbsp;m<sup>&minus;2</sup>&nbsp;K<sup>&minus;1</sup> after quantum correction, close to experiment (~140) and far from Tersoff molecular dynamics (310). One nanometer of SiN<sub>x</sub> raises it to 275; amorphous carbon, which supplies the missing intermediate modes, raises it to 350. At GaN/AlN the instinct fails: an Al<sub>1&minus;x</sub>Ga<sub>x</sub>N interlayer <em>lowers</em> conductance across the alloy range, because alloy scattering wins. A sigmoidal aluminum grade recovers it relative to an abrupt or linear profile. The sign of an interlayer is a phonon question, not a growth habit.</p>
           <p class="theme-links"><a href="#pub-pra-2026">Phys. Rev. Applied 25, 044013 (2026)</a> · <a href="#pub-apl-2026">Appl. Phys. Lett. 128, 122201 (2026)</a></p>
         </article>
 
         <article class="theme">
           <span class="interest-num">03</span>
           <h3>DFT-trained interface MLIPs</h3>
-          <p>Empirical potentials often misrepresent interfacial bonding. DeePMD and MTP models trained on DFT forces are used to drive NEMD in cells too large for direct DFT. For relaxed Al, Mo, Zr, and Au on diamond, quantum-corrected TBC values are about 284, 93, 30, and 40 MW m<sup>−2</sup> K<sup>−1</sup> &mdash; work carried out with U.S. Army DEVCOM Army Research Laboratory. Those resistances track the metal phonon specific heat and Debye temperature more closely than elastic modulus. Acoustic and diffuse mismatch models miss interfacial structure and inelastic transmission even with full-band DFT phonons. GaN/diamond TBC with Sandia National Laboratories is in progress.</p>
+          <p>Empirical potentials are convenient and, at these interfaces, often wrong. I train DeePMD and moment-tensor potentials on DFT forces and only then run molecular dynamics in cells direct DFT cannot reach. With U.S. Army DEVCOM, that gave quantum-corrected conductances of about 284, 93, 30, and 40&nbsp;MW&nbsp;m<sup>&minus;2</sup>&nbsp;K<sup>&minus;1</sup> for relaxed Al, Mo, Zr, and Au on diamond. The trend follows the metal&rsquo;s phonon specific heat and Debye temperature, not its stiffness. Acoustic and diffuse mismatch models miss the interfacial structure and the inelastic channels even when they are fed full-band DFT phonons. GaN/diamond, with Sandia National Laboratories, is the calculation I am in now.</p>
           <p class="theme-links"><a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer 235, 126227 (2024)</a> · <a href="#software">Research software</a></p>
         </article>
       </div>
@@ -357,7 +356,7 @@
       <div class="section-head">
         <p class="kicker">Methods and software</p>
         <h2>How the calculations are done</h2>
-        <p class="section-lead">Typical loop: build an interfacial supercell, label forces with DFT (VASP or Quantum ESPRESSO), train DeePMD or MTP, run NEMD in LAMMPS or GPUMD on multi-GPU clusters, and extract TBC from the steady temperature drop. Phonopy is used for bulk phonon checks. This is not a first-principles TBC calculation; the MLIP is trained to DFT forces and then used at MD length scales.</p>
+        <p class="section-lead">The loop I actually run: build the interfacial cell, label forces with VASP or Quantum ESPRESSO, train DeePMD or a moment-tensor potential, drive LAMMPS or GPUMD on a multi-GPU cluster, and read thermal boundary conductance from the steady temperature drop. Phonopy checks the bulk dispersions before I trust the interface. The potential is trained to DFT forces; the dynamics are classical molecular dynamics, with a quantum correction when the comparison is to room-temperature experiment.</p>
       </div>
       <div class="software-grid">
         <article class="soft">
@@ -392,9 +391,9 @@
             <p class="when">Spring 2023 &ndash; present</p>
           </header>
           <ul>
-            <li>Interfacial thermal transport in Si/Ge, metal/diamond, Si/diamond, GaN/AlGaN, and GaN/diamond stacks</li>
-            <li>DFT and molecular dynamics on multi-GPU HPC with SLURM</li>
-            <li>MLIPs trained from DFT and AIMD force data for those interfaces</li>
+            <li>Successive-interface thermal transport in Si/Ge, GaN/AlN, Si/diamond, metal/diamond, and GaN/diamond</li>
+            <li>DFT-trained DeePMD and moment-tensor potentials, then nonequilibrium molecular dynamics on multi-GPU clusters</li>
+            <li>Quantum corrections and device-scale models that turn an interfacial conductance into a hot-spot temperature</li>
           </ul>
         </article>
         <article class="post">
@@ -456,12 +455,12 @@
       <div class="collab-grid">
         <article class="soft">
           <h3>Research collaborations</h3>
-          <p>Published metal/diamond TBC work was done with U.S. Army DEVCOM Army Research Laboratory (<a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer 235, 126227</a>). That collaboration can continue on metal&ndash;diamond heat spreading. Current work with Sandia National Laboratories is GaN/diamond thermal boundary conductance (computational; not yet listed as a paper here). I also welcome theory&ndash;experiment comparisons on GaN/AlN and Si/diamond, and reuse of DFT-trained interface potentials in device-scale models. I do not run time-domain thermoreflectance in-house. Email <a href="mailto:khalid.adnan@utah.edu">khalid.adnan@utah.edu</a> with the stack, temperature range, and what you want compared.</p>
-          <p>This work is supported by NSF CAREER award CBET-2337749, &ldquo;Prediction and understanding of thermal transport across successive interfaces&rdquo; (PI: Tianli Feng, 2024&ndash;2029), whose scope is the same successive-interface question this thesis addresses. Computing time comes from CHPC at the University of Utah and Bridges-2 at the Pittsburgh Supercomputing Center through NSF ACCESS.</p>
+          <p>The comparisons I want are the ones where a measured conductance and a calculated one disagree, and we can say whether the nearby stack, the interlayer, or the potential is why. Published metal/diamond work with U.S. Army DEVCOM is in <a href="#pub-ijhmt-2024">Int. J. Heat Mass Transfer 235, 126227</a>. GaN/diamond with Sandia National Laboratories is underway. I also want theory next to time-domain thermoreflectance on GaN/AlN and Si/diamond; I compute, I do not run the measurement. Write to <a href="mailto:khalid.adnan@utah.edu">khalid.adnan@utah.edu</a> with the stack, the temperature, and the number you need explained.</p>
+          <p>The thesis sits inside NSF CAREER award CBET-2337749, &ldquo;Prediction and understanding of thermal transport across successive interfaces&rdquo; (PI: Tianli Feng, 2024&ndash;2029). Computing is at the University of Utah CHPC and on Bridges-2 through NSF ACCESS.</p>
         </article>
         <article class="soft">
           <h3>For students</h3>
-          <p>This page does not list open research-assistant positions. Students interested in computational thermal transport (mechanical engineering, materials science, or physics; Python; willingness to learn DFT and MD) may email a short note, a CV, and one paper they found interesting. Admission and funding are through the University of Utah.</p>
+          <p>If you want to learn how a phonon calculation is actually built &mdash; from a DFT force label to a potential to a temperature profile &mdash; send a short note, a CV, and one paper you argued with. Admission and funding go through the University of Utah; this page is not a job posting.</p>
         </article>
       </div>
     </section>
